@@ -1,0 +1,68 @@
+/* Custom styles for Machine Learning textbook */
+
+/* Improve code block appearance */
+.highlight {
+    border-radius: 0.3rem;
+}
+
+/* Better spacing for admonitions */
+.admonition {
+    margin: 1.5em 0;
+}
+
+/* Math equation styling */
+.arithmatex {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/* Learning graph specific styles */
+.learning-graph-node {
+    padding: 0.5em;
+    margin: 0.25em;
+    border-radius: 0.25em;
+}
+
+/* Concept list styling */
+.concept-list {
+    list-style-type: decimal;
+    padding-left: 2em;
+}
+
+/* Taxonomy color legend */
+.taxonomy-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.taxonomy-item {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    font-weight: 500;
+}
+
+/* Improve table readability */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    font-weight: 600;
+}
+
+/* Code annotations */
+.md-annotation {
+    font-size: 0.9em;
+}
+
+/* Enhance footnotes */
+.footnote {
+    font-size: 0.85em;
+    color: var(--md-default-fg-color--light);
+}

@@ -1,0 +1,2273 @@
+{
+  "metadata": {
+    "title": "Machine Learning: Algorithms and Applications",
+    "description": "A comprehensive learning graph for machine learning covering supervised learning (KNN, decision trees, logistic regression, SVMs), unsupervised learning (k-means clustering), and deep learning (neural networks, CNNs, transfer learning). Designed for college undergraduate students with prerequisites in linear algebra, calculus, and programming.",
+    "creator": "Claude Code AI",
+    "date": "2025-12-28",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundation Concepts",
+      "color": "LightCoral",
+      "font": {
+        "color": "white"
+      }
+    },
+    "KNN": {
+      "classifierName": "K-Nearest Neighbors",
+      "color": "PeachPuff",
+      "font": {
+        "color": "black"
+      }
+    },
+    "TREE": {
+      "classifierName": "Decision Trees",
+      "color": "LightYellow",
+      "font": {
+        "color": "black"
+      }
+    },
+    "LOGREG": {
+      "classifierName": "Logistic Regression",
+      "color": "Honeydew",
+      "font": {
+        "color": "black"
+      }
+    },
+    "REG": {
+      "classifierName": "Regularization",
+      "color": "MistyRose",
+      "font": {
+        "color": "black"
+      }
+    },
+    "SVM": {
+      "classifierName": "Support Vector Machines",
+      "color": "PaleTurquoise",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CLUST": {
+      "classifierName": "Clustering",
+      "color": "Lavender",
+      "font": {
+        "color": "black"
+      }
+    },
+    "NN": {
+      "classifierName": "Neural Networks",
+      "color": "PowderBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CNN": {
+      "classifierName": "Convolutional Networks",
+      "color": "PaleGreen",
+      "font": {
+        "color": "black"
+      }
+    },
+    "TL": {
+      "classifierName": "Transfer Learning",
+      "color": "Aquamarine",
+      "font": {
+        "color": "black"
+      }
+    },
+    "EVAL": {
+      "classifierName": "Evaluation Metrics",
+      "color": "LightPink",
+      "font": {
+        "color": "black"
+      }
+    },
+    "PREP": {
+      "classifierName": "Data Preprocessing",
+      "color": "LavenderBlush",
+      "font": {
+        "color": "black"
+      }
+    },
+    "OPT": {
+      "classifierName": "Optimization",
+      "color": "Plum",
+      "font": {
+        "color": "white"
+      }
+    },
+    "MISC": {
+      "classifierName": "Miscellaneous Concepts",
+      "color": "Gainsboro",
+      "font": {
+        "color": "black"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Machine Learning",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Supervised Learning",
+      "group": "FOUND"
+    },
+    {
+      "id": 3,
+      "label": "Unsupervised Learning",
+      "group": "FOUND"
+    },
+    {
+      "id": 4,
+      "label": "Classification",
+      "group": "FOUND"
+    },
+    {
+      "id": 5,
+      "label": "Regression",
+      "group": "FOUND"
+    },
+    {
+      "id": 6,
+      "label": "Training Data",
+      "group": "FOUND"
+    },
+    {
+      "id": 7,
+      "label": "Test Data",
+      "group": "FOUND"
+    },
+    {
+      "id": 8,
+      "label": "Validation Data",
+      "group": "FOUND"
+    },
+    {
+      "id": 9,
+      "label": "Feature",
+      "group": "FOUND"
+    },
+    {
+      "id": 10,
+      "label": "Label",
+      "group": "FOUND"
+    },
+    {
+      "id": 11,
+      "label": "Instance",
+      "group": "FOUND"
+    },
+    {
+      "id": 12,
+      "label": "Feature Vector",
+      "group": "FOUND"
+    },
+    {
+      "id": 13,
+      "label": "Model",
+      "group": "FOUND"
+    },
+    {
+      "id": 14,
+      "label": "Algorithm",
+      "group": "FOUND"
+    },
+    {
+      "id": 15,
+      "label": "Hyperparameter",
+      "group": "FOUND"
+    },
+    {
+      "id": 16,
+      "label": "K-Nearest Neighbors",
+      "group": "KNN"
+    },
+    {
+      "id": 17,
+      "label": "Distance Metric",
+      "group": "KNN"
+    },
+    {
+      "id": 18,
+      "label": "Euclidean Distance",
+      "group": "KNN"
+    },
+    {
+      "id": 19,
+      "label": "Manhattan Distance",
+      "group": "KNN"
+    },
+    {
+      "id": 20,
+      "label": "K Selection",
+      "group": "KNN"
+    },
+    {
+      "id": 21,
+      "label": "Decision Boundary",
+      "group": "KNN"
+    },
+    {
+      "id": 22,
+      "label": "Voronoi Diagram",
+      "group": "KNN"
+    },
+    {
+      "id": 23,
+      "label": "Curse of Dimensionality",
+      "group": "KNN"
+    },
+    {
+      "id": 24,
+      "label": "KNN for Classification",
+      "group": "KNN"
+    },
+    {
+      "id": 25,
+      "label": "KNN for Regression",
+      "group": "KNN"
+    },
+    {
+      "id": 26,
+      "label": "Lazy Learning",
+      "group": "KNN"
+    },
+    {
+      "id": 27,
+      "label": "Decision Tree",
+      "group": "TREE"
+    },
+    {
+      "id": 28,
+      "label": "Tree Node",
+      "group": "TREE"
+    },
+    {
+      "id": 29,
+      "label": "Leaf Node",
+      "group": "TREE"
+    },
+    {
+      "id": 30,
+      "label": "Splitting Criterion",
+      "group": "TREE"
+    },
+    {
+      "id": 31,
+      "label": "Entropy",
+      "group": "TREE"
+    },
+    {
+      "id": 32,
+      "label": "Information Gain",
+      "group": "TREE"
+    },
+    {
+      "id": 33,
+      "label": "Gini Impurity",
+      "group": "TREE"
+    },
+    {
+      "id": 34,
+      "label": "Pruning",
+      "group": "TREE"
+    },
+    {
+      "id": 35,
+      "label": "Overfitting",
+      "group": "TREE"
+    },
+    {
+      "id": 36,
+      "label": "Underfitting",
+      "group": "TREE"
+    },
+    {
+      "id": 37,
+      "label": "Tree Depth",
+      "group": "TREE"
+    },
+    {
+      "id": 38,
+      "label": "Categorical Features",
+      "group": "FOUND"
+    },
+    {
+      "id": 39,
+      "label": "Continuous Features",
+      "group": "FOUND"
+    },
+    {
+      "id": 40,
+      "label": "Feature Space Partitioning",
+      "group": "FOUND"
+    },
+    {
+      "id": 41,
+      "label": "Logistic Regression",
+      "group": "MISC"
+    },
+    {
+      "id": 42,
+      "label": "Sigmoid Function",
+      "group": "LOGREG"
+    },
+    {
+      "id": 43,
+      "label": "Log-Loss",
+      "group": "LOGREG"
+    },
+    {
+      "id": 44,
+      "label": "Binary Classification",
+      "group": "LOGREG"
+    },
+    {
+      "id": 45,
+      "label": "Multiclass Classification",
+      "group": "LOGREG"
+    },
+    {
+      "id": 46,
+      "label": "Maximum Likelihood",
+      "group": "LOGREG"
+    },
+    {
+      "id": 47,
+      "label": "One-vs-All",
+      "group": "LOGREG"
+    },
+    {
+      "id": 48,
+      "label": "One-vs-One",
+      "group": "LOGREG"
+    },
+    {
+      "id": 49,
+      "label": "Softmax Function",
+      "group": "LOGREG"
+    },
+    {
+      "id": 50,
+      "label": "Regularization",
+      "group": "REG"
+    },
+    {
+      "id": 51,
+      "label": "L1 Regularization",
+      "group": "REG"
+    },
+    {
+      "id": 52,
+      "label": "L2 Regularization",
+      "group": "REG"
+    },
+    {
+      "id": 53,
+      "label": "Ridge Regression",
+      "group": "REG"
+    },
+    {
+      "id": 54,
+      "label": "Lasso Regression",
+      "group": "REG"
+    },
+    {
+      "id": 55,
+      "label": "Support Vector Machine",
+      "group": "SVM"
+    },
+    {
+      "id": 56,
+      "label": "Hyperplane",
+      "group": "SVM"
+    },
+    {
+      "id": 57,
+      "label": "Margin",
+      "group": "SVM"
+    },
+    {
+      "id": 58,
+      "label": "Support Vectors",
+      "group": "SVM"
+    },
+    {
+      "id": 59,
+      "label": "Margin Maximization",
+      "group": "SVM"
+    },
+    {
+      "id": 60,
+      "label": "Hard Margin SVM",
+      "group": "SVM"
+    },
+    {
+      "id": 61,
+      "label": "Soft Margin SVM",
+      "group": "SVM"
+    },
+    {
+      "id": 62,
+      "label": "Slack Variables",
+      "group": "SVM"
+    },
+    {
+      "id": 63,
+      "label": "Kernel Trick",
+      "group": "SVM"
+    },
+    {
+      "id": 64,
+      "label": "Linear Kernel",
+      "group": "SVM"
+    },
+    {
+      "id": 65,
+      "label": "Polynomial Kernel",
+      "group": "SVM"
+    },
+    {
+      "id": 66,
+      "label": "Radial Basis Function",
+      "group": "SVM"
+    },
+    {
+      "id": 67,
+      "label": "Gaussian Kernel",
+      "group": "SVM"
+    },
+    {
+      "id": 68,
+      "label": "Dual Formulation",
+      "group": "SVM"
+    },
+    {
+      "id": 69,
+      "label": "Primal Formulation",
+      "group": "SVM"
+    },
+    {
+      "id": 70,
+      "label": "K-Means Clustering",
+      "group": "CLUST"
+    },
+    {
+      "id": 71,
+      "label": "Centroid",
+      "group": "CLUST"
+    },
+    {
+      "id": 72,
+      "label": "Cluster Assignment",
+      "group": "CLUST"
+    },
+    {
+      "id": 73,
+      "label": "Cluster Update",
+      "group": "CLUST"
+    },
+    {
+      "id": 74,
+      "label": "K-Means Initialization",
+      "group": "CLUST"
+    },
+    {
+      "id": 75,
+      "label": "Random Initialization",
+      "group": "CLUST"
+    },
+    {
+      "id": 76,
+      "label": "K-Means++ Initialization",
+      "group": "CLUST"
+    },
+    {
+      "id": 77,
+      "label": "Elbow Method",
+      "group": "CLUST"
+    },
+    {
+      "id": 78,
+      "label": "Silhouette Score",
+      "group": "CLUST"
+    },
+    {
+      "id": 79,
+      "label": "Within-Cluster Variance",
+      "group": "CLUST"
+    },
+    {
+      "id": 80,
+      "label": "Convergence Criteria",
+      "group": "CLUST"
+    },
+    {
+      "id": 81,
+      "label": "Inertia",
+      "group": "CLUST"
+    },
+    {
+      "id": 82,
+      "label": "Neural Network",
+      "group": "NN"
+    },
+    {
+      "id": 83,
+      "label": "Artificial Neuron",
+      "group": "NN"
+    },
+    {
+      "id": 84,
+      "label": "Perceptron",
+      "group": "NN"
+    },
+    {
+      "id": 85,
+      "label": "Activation Function",
+      "group": "NN"
+    },
+    {
+      "id": 86,
+      "label": "ReLU",
+      "group": "NN"
+    },
+    {
+      "id": 87,
+      "label": "Tanh",
+      "group": "NN"
+    },
+    {
+      "id": 88,
+      "label": "Sigmoid Activation",
+      "group": "LOGREG"
+    },
+    {
+      "id": 89,
+      "label": "Leaky ReLU",
+      "group": "NN"
+    },
+    {
+      "id": 90,
+      "label": "Weights",
+      "group": "NN"
+    },
+    {
+      "id": 91,
+      "label": "Bias",
+      "group": "NN"
+    },
+    {
+      "id": 92,
+      "label": "Forward Propagation",
+      "group": "NN"
+    },
+    {
+      "id": 93,
+      "label": "Backpropagation",
+      "group": "NN"
+    },
+    {
+      "id": 94,
+      "label": "Gradient Descent",
+      "group": "NN"
+    },
+    {
+      "id": 95,
+      "label": "Stochastic Gradient Descent",
+      "group": "NN"
+    },
+    {
+      "id": 96,
+      "label": "Mini-Batch Gradient Descent",
+      "group": "NN"
+    },
+    {
+      "id": 97,
+      "label": "Learning Rate",
+      "group": "NN"
+    },
+    {
+      "id": 98,
+      "label": "Loss Function",
+      "group": "NN"
+    },
+    {
+      "id": 99,
+      "label": "Mean Squared Error",
+      "group": "NN"
+    },
+    {
+      "id": 100,
+      "label": "Cross-Entropy Loss",
+      "group": "TREE"
+    },
+    {
+      "id": 101,
+      "label": "Epoch",
+      "group": "NN"
+    },
+    {
+      "id": 102,
+      "label": "Batch Size",
+      "group": "NN"
+    },
+    {
+      "id": 103,
+      "label": "Vanishing Gradient",
+      "group": "NN"
+    },
+    {
+      "id": 104,
+      "label": "Exploding Gradient",
+      "group": "NN"
+    },
+    {
+      "id": 105,
+      "label": "Weight Initialization",
+      "group": "NN"
+    },
+    {
+      "id": 106,
+      "label": "Xavier Initialization",
+      "group": "NN"
+    },
+    {
+      "id": 107,
+      "label": "He Initialization",
+      "group": "NN"
+    },
+    {
+      "id": 108,
+      "label": "Fully Connected Layer",
+      "group": "NN"
+    },
+    {
+      "id": 109,
+      "label": "Hidden Layer",
+      "group": "NN"
+    },
+    {
+      "id": 110,
+      "label": "Output Layer",
+      "group": "NN"
+    },
+    {
+      "id": 111,
+      "label": "Input Layer",
+      "group": "NN"
+    },
+    {
+      "id": 112,
+      "label": "Network Architecture",
+      "group": "NN"
+    },
+    {
+      "id": 113,
+      "label": "Deep Learning",
+      "group": "NN"
+    },
+    {
+      "id": 114,
+      "label": "Multilayer Perceptron",
+      "group": "NN"
+    },
+    {
+      "id": 115,
+      "label": "Universal Approximation",
+      "group": "NN"
+    },
+    {
+      "id": 116,
+      "label": "Convolutional Neural Network",
+      "group": "CNN"
+    },
+    {
+      "id": 117,
+      "label": "Convolution Operation",
+      "group": "CNN"
+    },
+    {
+      "id": 118,
+      "label": "Filter",
+      "group": "CNN"
+    },
+    {
+      "id": 119,
+      "label": "Kernel Size",
+      "group": "SVM"
+    },
+    {
+      "id": 120,
+      "label": "Stride",
+      "group": "CNN"
+    },
+    {
+      "id": 121,
+      "label": "Padding",
+      "group": "CNN"
+    },
+    {
+      "id": 122,
+      "label": "Valid Padding",
+      "group": "CNN"
+    },
+    {
+      "id": 123,
+      "label": "Same Padding",
+      "group": "CNN"
+    },
+    {
+      "id": 124,
+      "label": "Feature Map",
+      "group": "FOUND"
+    },
+    {
+      "id": 125,
+      "label": "Receptive Field",
+      "group": "CNN"
+    },
+    {
+      "id": 126,
+      "label": "Pooling Layer",
+      "group": "NN"
+    },
+    {
+      "id": 127,
+      "label": "Max Pooling",
+      "group": "CNN"
+    },
+    {
+      "id": 128,
+      "label": "Average Pooling",
+      "group": "CNN"
+    },
+    {
+      "id": 129,
+      "label": "Spatial Hierarchies",
+      "group": "CNN"
+    },
+    {
+      "id": 130,
+      "label": "Translation Invariance",
+      "group": "CNN"
+    },
+    {
+      "id": 131,
+      "label": "Local Connectivity",
+      "group": "CNN"
+    },
+    {
+      "id": 132,
+      "label": "Weight Sharing",
+      "group": "CNN"
+    },
+    {
+      "id": 133,
+      "label": "CNN Architecture",
+      "group": "CNN"
+    },
+    {
+      "id": 134,
+      "label": "LeNet",
+      "group": "CNN"
+    },
+    {
+      "id": 135,
+      "label": "AlexNet",
+      "group": "CNN"
+    },
+    {
+      "id": 136,
+      "label": "VGG",
+      "group": "CNN"
+    },
+    {
+      "id": 137,
+      "label": "ResNet",
+      "group": "CNN"
+    },
+    {
+      "id": 138,
+      "label": "Inception",
+      "group": "CNN"
+    },
+    {
+      "id": 139,
+      "label": "Transfer Learning",
+      "group": "TL"
+    },
+    {
+      "id": 140,
+      "label": "Pre-Trained Model",
+      "group": "FOUND"
+    },
+    {
+      "id": 141,
+      "label": "Fine-Tuning",
+      "group": "TL"
+    },
+    {
+      "id": 142,
+      "label": "Feature Extraction",
+      "group": "FOUND"
+    },
+    {
+      "id": 143,
+      "label": "Domain Adaptation",
+      "group": "TL"
+    },
+    {
+      "id": 144,
+      "label": "ImageNet",
+      "group": "TL"
+    },
+    {
+      "id": 145,
+      "label": "Model Zoo",
+      "group": "FOUND"
+    },
+    {
+      "id": 146,
+      "label": "Freezing Layers",
+      "group": "NN"
+    },
+    {
+      "id": 147,
+      "label": "Learning Rate Scheduling",
+      "group": "NN"
+    },
+    {
+      "id": 148,
+      "label": "Bias-Variance Tradeoff",
+      "group": "NN"
+    },
+    {
+      "id": 149,
+      "label": "Training Error",
+      "group": "EVAL"
+    },
+    {
+      "id": 150,
+      "label": "Validation Error",
+      "group": "FOUND"
+    },
+    {
+      "id": 151,
+      "label": "Test Error",
+      "group": "EVAL"
+    },
+    {
+      "id": 152,
+      "label": "Generalization",
+      "group": "EVAL"
+    },
+    {
+      "id": 153,
+      "label": "Cross-Validation",
+      "group": "FOUND"
+    },
+    {
+      "id": 154,
+      "label": "K-Fold Cross-Validation",
+      "group": "FOUND"
+    },
+    {
+      "id": 155,
+      "label": "Stratified Sampling",
+      "group": "EVAL"
+    },
+    {
+      "id": 156,
+      "label": "Holdout Method",
+      "group": "EVAL"
+    },
+    {
+      "id": 157,
+      "label": "Confusion Matrix",
+      "group": "EVAL"
+    },
+    {
+      "id": 158,
+      "label": "True Positive",
+      "group": "EVAL"
+    },
+    {
+      "id": 159,
+      "label": "False Positive",
+      "group": "EVAL"
+    },
+    {
+      "id": 160,
+      "label": "True Negative",
+      "group": "EVAL"
+    },
+    {
+      "id": 161,
+      "label": "False Negative",
+      "group": "EVAL"
+    },
+    {
+      "id": 162,
+      "label": "Accuracy",
+      "group": "EVAL"
+    },
+    {
+      "id": 163,
+      "label": "Precision",
+      "group": "EVAL"
+    },
+    {
+      "id": 164,
+      "label": "Recall",
+      "group": "EVAL"
+    },
+    {
+      "id": 165,
+      "label": "F1 Score",
+      "group": "EVAL"
+    },
+    {
+      "id": 166,
+      "label": "ROC Curve",
+      "group": "EVAL"
+    },
+    {
+      "id": 167,
+      "label": "AUC",
+      "group": "EVAL"
+    },
+    {
+      "id": 168,
+      "label": "Sensitivity",
+      "group": "EVAL"
+    },
+    {
+      "id": 169,
+      "label": "Specificity",
+      "group": "EVAL"
+    },
+    {
+      "id": 170,
+      "label": "Data Preprocessing",
+      "group": "EVAL"
+    },
+    {
+      "id": 171,
+      "label": "Normalization",
+      "group": "PREP"
+    },
+    {
+      "id": 172,
+      "label": "Standardization",
+      "group": "PREP"
+    },
+    {
+      "id": 173,
+      "label": "Min-Max Scaling",
+      "group": "PREP"
+    },
+    {
+      "id": 174,
+      "label": "Z-Score Normalization",
+      "group": "PREP"
+    },
+    {
+      "id": 175,
+      "label": "One-Hot Encoding",
+      "group": "PREP"
+    },
+    {
+      "id": 176,
+      "label": "Label Encoding",
+      "group": "FOUND"
+    },
+    {
+      "id": 177,
+      "label": "Feature Engineering",
+      "group": "FOUND"
+    },
+    {
+      "id": 178,
+      "label": "Feature Selection",
+      "group": "FOUND"
+    },
+    {
+      "id": 179,
+      "label": "Dimensionality Reduction",
+      "group": "PREP"
+    },
+    {
+      "id": 180,
+      "label": "Data Augmentation",
+      "group": "PREP"
+    },
+    {
+      "id": 181,
+      "label": "Computational Complexity",
+      "group": "OPT"
+    },
+    {
+      "id": 182,
+      "label": "Time Complexity",
+      "group": "OPT"
+    },
+    {
+      "id": 183,
+      "label": "Space Complexity",
+      "group": "OPT"
+    },
+    {
+      "id": 184,
+      "label": "Scalability",
+      "group": "OPT"
+    },
+    {
+      "id": 185,
+      "label": "Batch Processing",
+      "group": "NN"
+    },
+    {
+      "id": 186,
+      "label": "Online Learning",
+      "group": "OPT"
+    },
+    {
+      "id": 187,
+      "label": "Optimizer",
+      "group": "OPT"
+    },
+    {
+      "id": 188,
+      "label": "Adam Optimizer",
+      "group": "OPT"
+    },
+    {
+      "id": 189,
+      "label": "RMSprop",
+      "group": "OPT"
+    },
+    {
+      "id": 190,
+      "label": "Momentum",
+      "group": "OPT"
+    },
+    {
+      "id": 191,
+      "label": "Nesterov Momentum",
+      "group": "OPT"
+    },
+    {
+      "id": 192,
+      "label": "Gradient Clipping",
+      "group": "OPT"
+    },
+    {
+      "id": 193,
+      "label": "Dropout",
+      "group": "OPT"
+    },
+    {
+      "id": 194,
+      "label": "Early Stopping",
+      "group": "OPT"
+    },
+    {
+      "id": 195,
+      "label": "Model Evaluation",
+      "group": "FOUND"
+    },
+    {
+      "id": 196,
+      "label": "Model Selection",
+      "group": "FOUND"
+    },
+    {
+      "id": 197,
+      "label": "Hyperparameter Tuning",
+      "group": "FOUND"
+    },
+    {
+      "id": 198,
+      "label": "Grid Search",
+      "group": "OPT"
+    },
+    {
+      "id": 199,
+      "label": "Random Search",
+      "group": "OPT"
+    },
+    {
+      "id": 200,
+      "label": "Bayesian Optimization",
+      "group": "OPT"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 1
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 6,
+      "to": 1
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 8,
+      "to": 6
+    },
+    {
+      "from": 9,
+      "to": 1
+    },
+    {
+      "from": 10,
+      "to": 2
+    },
+    {
+      "from": 11,
+      "to": 9
+    },
+    {
+      "from": 12,
+      "to": 9
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 13,
+      "to": 1
+    },
+    {
+      "from": 14,
+      "to": 1
+    },
+    {
+      "from": 15,
+      "to": 13
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 16,
+      "to": 2
+    },
+    {
+      "from": 16,
+      "to": 14
+    },
+    {
+      "from": 17,
+      "to": 9
+    },
+    {
+      "from": 18,
+      "to": 17
+    },
+    {
+      "from": 19,
+      "to": 17
+    },
+    {
+      "from": 20,
+      "to": 15
+    },
+    {
+      "from": 20,
+      "to": 16
+    },
+    {
+      "from": 21,
+      "to": 4
+    },
+    {
+      "from": 22,
+      "to": 16
+    },
+    {
+      "from": 22,
+      "to": 21
+    },
+    {
+      "from": 23,
+      "to": 9
+    },
+    {
+      "from": 23,
+      "to": 17
+    },
+    {
+      "from": 24,
+      "to": 16
+    },
+    {
+      "from": 24,
+      "to": 4
+    },
+    {
+      "from": 25,
+      "to": 16
+    },
+    {
+      "from": 25,
+      "to": 5
+    },
+    {
+      "from": 26,
+      "to": 16
+    },
+    {
+      "from": 27,
+      "to": 2
+    },
+    {
+      "from": 27,
+      "to": 14
+    },
+    {
+      "from": 28,
+      "to": 27
+    },
+    {
+      "from": 29,
+      "to": 27
+    },
+    {
+      "from": 29,
+      "to": 28
+    },
+    {
+      "from": 30,
+      "to": 27
+    },
+    {
+      "from": 31,
+      "to": 30
+    },
+    {
+      "from": 32,
+      "to": 31
+    },
+    {
+      "from": 33,
+      "to": 30
+    },
+    {
+      "from": 34,
+      "to": 27
+    },
+    {
+      "from": 34,
+      "to": 35
+    },
+    {
+      "from": 35,
+      "to": 13
+    },
+    {
+      "from": 35,
+      "to": 6
+    },
+    {
+      "from": 36,
+      "to": 13
+    },
+    {
+      "from": 36,
+      "to": 6
+    },
+    {
+      "from": 37,
+      "to": 27
+    },
+    {
+      "from": 37,
+      "to": 28
+    },
+    {
+      "from": 38,
+      "to": 9
+    },
+    {
+      "from": 39,
+      "to": 9
+    },
+    {
+      "from": 40,
+      "to": 27
+    },
+    {
+      "from": 40,
+      "to": 9
+    },
+    {
+      "from": 41,
+      "to": 2
+    },
+    {
+      "from": 41,
+      "to": 14
+    },
+    {
+      "from": 41,
+      "to": 4
+    },
+    {
+      "from": 42,
+      "to": 41
+    },
+    {
+      "from": 43,
+      "to": 98
+    },
+    {
+      "from": 43,
+      "to": 41
+    },
+    {
+      "from": 44,
+      "to": 4
+    },
+    {
+      "from": 45,
+      "to": 4
+    },
+    {
+      "from": 46,
+      "to": 41
+    },
+    {
+      "from": 47,
+      "to": 45
+    },
+    {
+      "from": 47,
+      "to": 41
+    },
+    {
+      "from": 48,
+      "to": 45
+    },
+    {
+      "from": 48,
+      "to": 41
+    },
+    {
+      "from": 49,
+      "to": 45
+    },
+    {
+      "from": 50,
+      "to": 35
+    },
+    {
+      "from": 51,
+      "to": 50
+    },
+    {
+      "from": 52,
+      "to": 50
+    },
+    {
+      "from": 53,
+      "to": 52
+    },
+    {
+      "from": 53,
+      "to": 5
+    },
+    {
+      "from": 54,
+      "to": 51
+    },
+    {
+      "from": 54,
+      "to": 5
+    },
+    {
+      "from": 55,
+      "to": 2
+    },
+    {
+      "from": 55,
+      "to": 14
+    },
+    {
+      "from": 55,
+      "to": 4
+    },
+    {
+      "from": 56,
+      "to": 55
+    },
+    {
+      "from": 57,
+      "to": 55
+    },
+    {
+      "from": 57,
+      "to": 56
+    },
+    {
+      "from": 58,
+      "to": 55
+    },
+    {
+      "from": 58,
+      "to": 57
+    },
+    {
+      "from": 59,
+      "to": 57
+    },
+    {
+      "from": 60,
+      "to": 55
+    },
+    {
+      "from": 60,
+      "to": 57
+    },
+    {
+      "from": 61,
+      "to": 55
+    },
+    {
+      "from": 61,
+      "to": 57
+    },
+    {
+      "from": 62,
+      "to": 61
+    },
+    {
+      "from": 63,
+      "to": 55
+    },
+    {
+      "from": 64,
+      "to": 63
+    },
+    {
+      "from": 65,
+      "to": 63
+    },
+    {
+      "from": 66,
+      "to": 63
+    },
+    {
+      "from": 67,
+      "to": 63
+    },
+    {
+      "from": 67,
+      "to": 66
+    },
+    {
+      "from": 68,
+      "to": 55
+    },
+    {
+      "from": 69,
+      "to": 55
+    },
+    {
+      "from": 70,
+      "to": 3
+    },
+    {
+      "from": 70,
+      "to": 14
+    },
+    {
+      "from": 71,
+      "to": 70
+    },
+    {
+      "from": 72,
+      "to": 70
+    },
+    {
+      "from": 72,
+      "to": 71
+    },
+    {
+      "from": 73,
+      "to": 70
+    },
+    {
+      "from": 73,
+      "to": 71
+    },
+    {
+      "from": 74,
+      "to": 70
+    },
+    {
+      "from": 75,
+      "to": 74
+    },
+    {
+      "from": 76,
+      "to": 74
+    },
+    {
+      "from": 77,
+      "to": 70
+    },
+    {
+      "from": 77,
+      "to": 15
+    },
+    {
+      "from": 78,
+      "to": 70
+    },
+    {
+      "from": 79,
+      "to": 70
+    },
+    {
+      "from": 79,
+      "to": 71
+    },
+    {
+      "from": 80,
+      "to": 70
+    },
+    {
+      "from": 81,
+      "to": 70
+    },
+    {
+      "from": 81,
+      "to": 79
+    },
+    {
+      "from": 82,
+      "to": 2
+    },
+    {
+      "from": 82,
+      "to": 14
+    },
+    {
+      "from": 83,
+      "to": 82
+    },
+    {
+      "from": 84,
+      "to": 83
+    },
+    {
+      "from": 85,
+      "to": 83
+    },
+    {
+      "from": 86,
+      "to": 85
+    },
+    {
+      "from": 87,
+      "to": 85
+    },
+    {
+      "from": 88,
+      "to": 85
+    },
+    {
+      "from": 89,
+      "to": 85
+    },
+    {
+      "from": 89,
+      "to": 86
+    },
+    {
+      "from": 90,
+      "to": 83
+    },
+    {
+      "from": 91,
+      "to": 83
+    },
+    {
+      "from": 92,
+      "to": 82
+    },
+    {
+      "from": 92,
+      "to": 83
+    },
+    {
+      "from": 93,
+      "to": 82
+    },
+    {
+      "from": 93,
+      "to": 92
+    },
+    {
+      "from": 94,
+      "to": 93
+    },
+    {
+      "from": 95,
+      "to": 94
+    },
+    {
+      "from": 96,
+      "to": 94
+    },
+    {
+      "from": 97,
+      "to": 94
+    },
+    {
+      "from": 97,
+      "to": 15
+    },
+    {
+      "from": 98,
+      "to": 13
+    },
+    {
+      "from": 99,
+      "to": 98
+    },
+    {
+      "from": 99,
+      "to": 5
+    },
+    {
+      "from": 100,
+      "to": 98
+    },
+    {
+      "from": 100,
+      "to": 4
+    },
+    {
+      "from": 101,
+      "to": 6
+    },
+    {
+      "from": 101,
+      "to": 82
+    },
+    {
+      "from": 102,
+      "to": 6
+    },
+    {
+      "from": 102,
+      "to": 82
+    },
+    {
+      "from": 103,
+      "to": 93
+    },
+    {
+      "from": 103,
+      "to": 94
+    },
+    {
+      "from": 104,
+      "to": 93
+    },
+    {
+      "from": 104,
+      "to": 94
+    },
+    {
+      "from": 105,
+      "to": 82
+    },
+    {
+      "from": 105,
+      "to": 90
+    },
+    {
+      "from": 106,
+      "to": 105
+    },
+    {
+      "from": 107,
+      "to": 105
+    },
+    {
+      "from": 108,
+      "to": 82
+    },
+    {
+      "from": 109,
+      "to": 82
+    },
+    {
+      "from": 109,
+      "to": 108
+    },
+    {
+      "from": 110,
+      "to": 82
+    },
+    {
+      "from": 110,
+      "to": 108
+    },
+    {
+      "from": 111,
+      "to": 82
+    },
+    {
+      "from": 111,
+      "to": 108
+    },
+    {
+      "from": 112,
+      "to": 82
+    },
+    {
+      "from": 113,
+      "to": 82
+    },
+    {
+      "from": 114,
+      "to": 82
+    },
+    {
+      "from": 114,
+      "to": 109
+    },
+    {
+      "from": 115,
+      "to": 82
+    },
+    {
+      "from": 116,
+      "to": 113
+    },
+    {
+      "from": 116,
+      "to": 14
+    },
+    {
+      "from": 117,
+      "to": 116
+    },
+    {
+      "from": 118,
+      "to": 117
+    },
+    {
+      "from": 119,
+      "to": 118
+    },
+    {
+      "from": 119,
+      "to": 15
+    },
+    {
+      "from": 120,
+      "to": 117
+    },
+    {
+      "from": 121,
+      "to": 117
+    },
+    {
+      "from": 122,
+      "to": 121
+    },
+    {
+      "from": 123,
+      "to": 121
+    },
+    {
+      "from": 124,
+      "to": 117
+    },
+    {
+      "from": 124,
+      "to": 118
+    },
+    {
+      "from": 125,
+      "to": 116
+    },
+    {
+      "from": 125,
+      "to": 117
+    },
+    {
+      "from": 126,
+      "to": 116
+    },
+    {
+      "from": 127,
+      "to": 126
+    },
+    {
+      "from": 128,
+      "to": 126
+    },
+    {
+      "from": 129,
+      "to": 116
+    },
+    {
+      "from": 129,
+      "to": 124
+    },
+    {
+      "from": 130,
+      "to": 116
+    },
+    {
+      "from": 130,
+      "to": 117
+    },
+    {
+      "from": 131,
+      "to": 116
+    },
+    {
+      "from": 131,
+      "to": 117
+    },
+    {
+      "from": 132,
+      "to": 116
+    },
+    {
+      "from": 132,
+      "to": 90
+    },
+    {
+      "from": 133,
+      "to": 116
+    },
+    {
+      "from": 134,
+      "to": 133
+    },
+    {
+      "from": 135,
+      "to": 133
+    },
+    {
+      "from": 136,
+      "to": 133
+    },
+    {
+      "from": 137,
+      "to": 133
+    },
+    {
+      "from": 138,
+      "to": 133
+    },
+    {
+      "from": 139,
+      "to": 113
+    },
+    {
+      "from": 139,
+      "to": 14
+    },
+    {
+      "from": 140,
+      "to": 139
+    },
+    {
+      "from": 141,
+      "to": 139
+    },
+    {
+      "from": 141,
+      "to": 140
+    },
+    {
+      "from": 142,
+      "to": 139
+    },
+    {
+      "from": 142,
+      "to": 140
+    },
+    {
+      "from": 143,
+      "to": 139
+    },
+    {
+      "from": 144,
+      "to": 116
+    },
+    {
+      "from": 144,
+      "to": 140
+    },
+    {
+      "from": 145,
+      "to": 140
+    },
+    {
+      "from": 146,
+      "to": 141
+    },
+    {
+      "from": 147,
+      "to": 97
+    },
+    {
+      "from": 147,
+      "to": 139
+    },
+    {
+      "from": 148,
+      "to": 35
+    },
+    {
+      "from": 148,
+      "to": 36
+    },
+    {
+      "from": 149,
+      "to": 6
+    },
+    {
+      "from": 149,
+      "to": 13
+    },
+    {
+      "from": 150,
+      "to": 8
+    },
+    {
+      "from": 150,
+      "to": 13
+    },
+    {
+      "from": 151,
+      "to": 7
+    },
+    {
+      "from": 151,
+      "to": 13
+    },
+    {
+      "from": 152,
+      "to": 148
+    },
+    {
+      "from": 152,
+      "to": 149
+    },
+    {
+      "from": 152,
+      "to": 150
+    },
+    {
+      "from": 153,
+      "to": 8
+    },
+    {
+      "from": 153,
+      "to": 13
+    },
+    {
+      "from": 154,
+      "to": 153
+    },
+    {
+      "from": 155,
+      "to": 153
+    },
+    {
+      "from": 156,
+      "to": 6
+    },
+    {
+      "from": 156,
+      "to": 7
+    },
+    {
+      "from": 156,
+      "to": 8
+    },
+    {
+      "from": 157,
+      "to": 4
+    },
+    {
+      "from": 158,
+      "to": 157
+    },
+    {
+      "from": 159,
+      "to": 157
+    },
+    {
+      "from": 160,
+      "to": 157
+    },
+    {
+      "from": 161,
+      "to": 157
+    },
+    {
+      "from": 162,
+      "to": 157
+    },
+    {
+      "from": 163,
+      "to": 158
+    },
+    {
+      "from": 163,
+      "to": 159
+    },
+    {
+      "from": 164,
+      "to": 158
+    },
+    {
+      "from": 164,
+      "to": 161
+    },
+    {
+      "from": 165,
+      "to": 163
+    },
+    {
+      "from": 165,
+      "to": 164
+    },
+    {
+      "from": 166,
+      "to": 4
+    },
+    {
+      "from": 167,
+      "to": 166
+    },
+    {
+      "from": 168,
+      "to": 164
+    },
+    {
+      "from": 169,
+      "to": 160
+    },
+    {
+      "from": 169,
+      "to": 159
+    },
+    {
+      "from": 170,
+      "to": 6
+    },
+    {
+      "from": 171,
+      "to": 170
+    },
+    {
+      "from": 172,
+      "to": 170
+    },
+    {
+      "from": 173,
+      "to": 171
+    },
+    {
+      "from": 174,
+      "to": 172
+    },
+    {
+      "from": 175,
+      "to": 170
+    },
+    {
+      "from": 175,
+      "to": 38
+    },
+    {
+      "from": 176,
+      "to": 170
+    },
+    {
+      "from": 176,
+      "to": 10
+    },
+    {
+      "from": 177,
+      "to": 9
+    },
+    {
+      "from": 177,
+      "to": 170
+    },
+    {
+      "from": 178,
+      "to": 177
+    },
+    {
+      "from": 179,
+      "to": 9
+    },
+    {
+      "from": 179,
+      "to": 23
+    },
+    {
+      "from": 180,
+      "to": 170
+    },
+    {
+      "from": 180,
+      "to": 116
+    },
+    {
+      "from": 181,
+      "to": 14
+    },
+    {
+      "from": 182,
+      "to": 181
+    },
+    {
+      "from": 183,
+      "to": 181
+    },
+    {
+      "from": 184,
+      "to": 181
+    },
+    {
+      "from": 185,
+      "to": 6
+    },
+    {
+      "from": 185,
+      "to": 102
+    },
+    {
+      "from": 186,
+      "to": 1
+    },
+    {
+      "from": 186,
+      "to": 6
+    },
+    {
+      "from": 187,
+      "to": 94
+    },
+    {
+      "from": 188,
+      "to": 187
+    },
+    {
+      "from": 189,
+      "to": 187
+    },
+    {
+      "from": 190,
+      "to": 94
+    },
+    {
+      "from": 190,
+      "to": 187
+    },
+    {
+      "from": 191,
+      "to": 190
+    },
+    {
+      "from": 192,
+      "to": 104
+    },
+    {
+      "from": 193,
+      "to": 50
+    },
+    {
+      "from": 193,
+      "to": 82
+    },
+    {
+      "from": 194,
+      "to": 50
+    },
+    {
+      "from": 194,
+      "to": 150
+    },
+    {
+      "from": 195,
+      "to": 13
+    },
+    {
+      "from": 195,
+      "to": 7
+    },
+    {
+      "from": 196,
+      "to": 13
+    },
+    {
+      "from": 196,
+      "to": 195
+    },
+    {
+      "from": 197,
+      "to": 15
+    },
+    {
+      "from": 197,
+      "to": 196
+    },
+    {
+      "from": 198,
+      "to": 197
+    },
+    {
+      "from": 199,
+      "to": 197
+    },
+    {
+      "from": 200,
+      "to": 197
+    }
+  ]
+}

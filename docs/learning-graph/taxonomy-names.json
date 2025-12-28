@@ -1,0 +1,16 @@
+{
+  "FOUND": "Foundation Concepts",
+  "KNN": "K-Nearest Neighbors",
+  "TREE": "Decision Trees",
+  "LOGREG": "Logistic Regression",
+  "REG": "Regularization",
+  "SVM": "Support Vector Machines",
+  "CLUST": "Clustering",
+  "NN": "Neural Networks",
+  "CNN": "Convolutional Networks",
+  "TL": "Transfer Learning",
+  "EVAL": "Evaluation Metrics",
+  "PREP": "Data Preprocessing",
+  "OPT": "Optimization",
+  "MISC": "Miscellaneous"
+}

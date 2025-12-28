@@ -1,0 +1,130 @@
+site_name: Machine Learning - Algorithms and Applications
+site_description: A comprehensive intelligent textbook on machine learning algorithms and applications
+site_author: Anvith Pothula
+site_url: https://example.com
+
+# Repository
+repo_name: machine-learning-textbook
+repo_url: https://github.com/yourusername/machine-learning-textbook
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2025 | CC BY-NC-SA 4.0 DEED
+
+# Theme Configuration
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Extra JavaScript
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Extra CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - minify:
+      minify_html: true
+
+# Navigation Structure
+nav:
+  - Home: index.md
+  - Course Description: course-description.md
+  - Learning Graph:
+      - Introduction: learning-graph/index.md
+      - Course Description Assessment: learning-graph/course-description-assessment.md
+      - Concept List: learning-graph/concept-list.md
+      - Concept Taxonomy: learning-graph/concept-taxonomy.md
+      - Learning Graph (CSV): learning-graph/learning-graph.csv
+      - Learning Graph (JSON): learning-graph/learning-graph.json
+      - Quality Metrics: learning-graph/quality-metrics.md
+      - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+
+# Extra Configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/AnvithPothula
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/anvith-pothula
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  generator: false

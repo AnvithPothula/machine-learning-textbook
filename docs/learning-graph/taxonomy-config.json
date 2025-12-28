@@ -1,0 +1,67 @@
+{
+  "FOUND": {
+    "range": [1, 15],
+    "keywords": ["machine learning", "supervised", "unsupervised", "training data", "test data", "validation", "feature", "label", "instance", "model", "algorithm", "hyperparameter"],
+    "exclude": []
+  },
+  "KNN": {
+    "range": [16, 26],
+    "keywords": ["nearest", "knn", "distance", "euclidean", "manhattan", "voronoi", "lazy learning"],
+    "exclude": []
+  },
+  "TREE": {
+    "range": [27, 40],
+    "keywords": ["tree", "node", "leaf", "splitting", "entropy", "information gain", "gini", "pruning"],
+    "exclude": []
+  },
+  "LOGREG": {
+    "range": [41, 49],
+    "keywords": ["logistic", "sigmoid", "log-loss", "maximum likelihood", "one-vs-all", "one-vs-one", "softmax"],
+    "exclude": ["regression"]
+  },
+  "REG": {
+    "range": [50, 54],
+    "keywords": ["regularization", "l1", "l2", "ridge", "lasso"],
+    "exclude": []
+  },
+  "SVM": {
+    "range": [55, 69],
+    "keywords": ["support vector", "svm", "hyperplane", "margin", "kernel", "dual", "primal", "slack"],
+    "exclude": []
+  },
+  "CLUST": {
+    "range": [70, 81],
+    "keywords": ["cluster", "k-means", "centroid", "elbow", "silhouette", "inertia"],
+    "exclude": []
+  },
+  "NN": {
+    "range": [82, 115],
+    "keywords": ["neural network", "neuron", "perceptron", "activation", "relu", "tanh", "weights", "bias", "forward", "backpropagation", "gradient descent", "learning rate", "loss function", "epoch", "batch", "layer", "multilayer"],
+    "exclude": ["convolutional", "cnn"]
+  },
+  "CNN": {
+    "range": [116, 138],
+    "keywords": ["convolutional", "cnn", "convolution", "filter", "kernel size", "stride", "padding", "pooling", "feature map", "receptive", "lenet", "alexnet", "vgg", "resnet", "inception"],
+    "exclude": []
+  },
+  "TL": {
+    "range": [139, 147],
+    "keywords": ["transfer", "pre-trained", "fine-tuning", "feature extraction", "domain adaptation", "imagenet", "model zoo", "freezing"],
+    "exclude": []
+  },
+  "EVAL": {
+    "range": [148, 169],
+    "keywords": ["validation", "test error", "generalization", "cross-validation", "fold", "stratified", "holdout", "confusion matrix", "true positive", "false positive", "accuracy", "precision", "recall", "f1", "roc", "auc", "sensitivity", "specificity"],
+    "exclude": []
+  },
+  "PREP": {
+    "range": [170, 180],
+    "keywords": ["preprocessing", "normalization", "standardization", "scaling", "encoding", "feature engineering", "feature selection", "dimensionality reduction", "augmentation"],
+    "exclude": []
+  },
+  "OPT": {
+    "range": [181, 200],
+    "keywords": ["complexity", "scalability", "batch processing", "online learning", "optimizer", "adam", "rmsprop", "momentum", "nesterov", "gradient clipping", "dropout", "early stopping", "evaluation", "model selection", "hyperparameter tuning", "grid search", "random search", "bayesian optimization"],
+    "exclude": []
+  }
+}
