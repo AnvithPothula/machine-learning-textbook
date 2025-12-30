@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training vs Validation Error</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .controls {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .controls label {
+            font-weight: 600;
+            color: #555;
+        }
+        .controls select {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #chartContainer {
+            position: relative;
+            height: 450px;
+            margin: 20px 0;
+        }
+        .info-box {
+            background: #E3F2FD;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Training vs Validation Error Over Epochs</h1>
+
+    <div class="container">
+        <div class="controls">
+            <label>Scenario:</label>
+            <select id="scenarioSelect">
+                <option value="good">Good Fit</option>
+                <option value="overfit" selected>Overfitting</option>
+                <option value="underfit">Underfitting</option>
+                <option value="early">Early Stopping Point</option>
+            </select>
+        </div>
+
+        <div id="chartContainer">
+            <canvas id="errorChart"></canvas>
+        </div>
+
+        <div class="info-box">
+            <h3>Understanding the Curves</h3>
+            <p><strong>Training Error</strong> (blue): Error on the training dataset. Generally decreases as model learns.</p>
+            <p><strong>Validation Error</strong> (orange): Error on held-out validation data. Indicates generalization performance.</p>
+
+            <h4>Scenarios:</h4>
+            <ul>
+                <li><strong>Good Fit</strong>: Both errors decrease and converge at low values</li>
+                <li><strong>Overfitting</strong>: Training error continues decreasing but validation error increases - model memorizes training data</li>
+                <li><strong>Underfitting</strong>: Both errors remain high - model is too simple</li>
+                <li><strong>Early Stopping</strong>: Stop training when validation error starts increasing to prevent overfitting</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('errorChart').getContext('2d');
+
+        function generateScenario(type) {
+            const epochs = 50;
+            const training = [];
+            const validation = [];
+
+            for (let i = 0; i <= epochs; i++) {
+                const epoch = i;
+                let trainErr, valErr;
+
+                switch(type) {
+                    case 'good':
+                        trainErr = 0.8 * Math.exp(-0.08 * epoch) + 0.05;
+                        valErr = 0.85 * Math.exp(-0.075 * epoch) + 0.08;
+                        break;
+
+                    case 'overfit':
+                        trainErr = 0.8 * Math.exp(-0.12 * epoch) + 0.02;
+                        valErr = epoch < 15 ?
+                            0.85 * Math.exp(-0.08 * epoch) + 0.1 :
+                            0.1 + 0.015 * (epoch - 15);
+                        break;
+
+                    case 'underfit':
+                        trainErr = 0.6 * Math.exp(-0.03 * epoch) + 0.35;
+                        valErr = 0.65 * Math.exp(-0.03 * epoch) + 0.38;
+                        break;
+
+                    case 'early':
+                        trainErr = 0.8 * Math.exp(-0.1 * epoch) + 0.03;
+                        valErr = epoch < 20 ?
+                            0.85 * Math.exp(-0.075 * epoch) + 0.1 :
+                            0.15 + 0.008 * (epoch - 20);
+                        break;
+                }
+
+                // Add small random noise
+                trainErr += (Math.random() - 0.5) * 0.02;
+                valErr += (Math.random() - 0.5) * 0.03;
+
+                training.push({ x: epoch, y: Math.max(0.01, trainErr) });
+                validation.push({ x: epoch, y: Math.max(0.01, valErr) });
+            }
+
+            return { training, validation };
+        }
+
+        let chart;
+
+        function updateChart() {
+            const scenario = document.getElementById('scenarioSelect').value;
+            const data = generateScenario(scenario);
+
+            const annotations = {};
+            if (scenario === 'early') {
+                annotations.earlyStop = {
+                    type: 'line',
+                    xMin: 20,
+                    xMax: 20,
+                    borderColor: 'rgb(255, 99, 132)',
+                    borderWidth: 2,
+                    borderDash: [5, 5],
+                    label: {
+                        display: true,
+                        content: 'Early Stop',
+                        position: 'start'
+                    }
+                };
+            }
+
+            if (chart) {
+                chart.destroy();
+            }
+
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    datasets: [
+                        {
+                            label: 'Training Error',
+                            data: data.training,
+                            borderColor: 'rgb(33, 150, 243)',
+                            backgroundColor: 'rgba(33, 150, 243, 0.1)',
+                            borderWidth: 3,
+                            fill: false,
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Validation Error',
+                            data: data.validation,
+                            borderColor: 'rgb(255, 152, 0)',
+                            backgroundColor: 'rgba(255, 152, 0, 0.1)',
+                            borderWidth: 3,
+                            fill: false,
+                            tension: 0.4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: `Training vs Validation Error: ${scenario.charAt(0).toUpperCase() + scenario.slice(1)} Scenario`,
+                            font: { size: 16 }
+                        },
+                        legend: {
+                            position: 'top'
+                        },
+                        annotation: {
+                            annotations: annotations
+                        }
+                    },
+                    scales: {
+                        x: {
+                            type: 'linear',
+                            title: {
+                                display: true,
+                                text: 'Training Epoch'
+                            },
+                            min: 0,
+                            max: 50
+                        },
+                        y: {
+                            type: 'linear',
+                            title: {
+                                display: true,
+                                text: 'Error / Loss'
+                            },
+                            min: 0,
+                            max: 1
+                        }
+                    }
+                }
+            });
+        }
+
+        document.getElementById('scenarioSelect').addEventListener('change', updateChart);
+        updateChart();
+    </script>
+</body>
+</html>

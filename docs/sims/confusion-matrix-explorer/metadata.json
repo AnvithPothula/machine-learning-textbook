@@ -1,0 +1,45 @@
+{
+  "title": "Interactive Confusion Matrix Explorer",
+  "description": "Interactive tool for exploring confusion matrices and calculating classification metrics",
+  "creator": "Claude Code with microsim-generator skill",
+  "date": "2025-12-29",
+  "subject": ["machine learning", "evaluation", "confusion matrix", "precision", "recall", "F1 score"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "interactivityType": "active",
+  "typicalLearningTime": "PT6M",
+  "bloomLevel": "Apply",
+  "library": "Vanilla JavaScript",
+  "controls": [
+    {
+      "type": "number",
+      "name": "tp",
+      "label": "True Positives"
+    },
+    {
+      "type": "number",
+      "name": "tn",
+      "label": "True Negatives"
+    },
+    {
+      "type": "number",
+      "name": "fp",
+      "label": "False Positives"
+    },
+    {
+      "type": "number",
+      "name": "fn",
+      "label": "False Negatives"
+    },
+    {
+      "type": "select",
+      "name": "example",
+      "label": "Example Scenario",
+      "options": ["Custom", "Good Classifier", "Poor Classifier", "Imbalanced Data"]
+    }
+  ]
+}

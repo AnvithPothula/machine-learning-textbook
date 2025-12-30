@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activation Function Comparison</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        #controls {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #controls label {
+            font-weight: 600;
+            color: #555;
+        }
+        #controls input[type="range"] {
+            width: 150px;
+        }
+        #controls span {
+            font-weight: bold;
+            color: #2196F3;
+            min-width: 40px;
+            display: inline-block;
+        }
+        #p5-canvas {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .info-box {
+            background: #E8F5E9;
+            border-left: 4px solid #4CAF50;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            color: #2E7D32;
+        }
+    </style>
+</head>
+<body>
+    <h1>Activation Function Comparison</h1>
+    <div class="description">
+        Compare different activation functions and their derivatives interactively
+    </div>
+
+    <div id="controls"></div>
+
+    <div id="p5-canvas"></div>
+
+    <div class="info-box">
+        <h3>About Activation Functions</h3>
+        <p><strong>Sigmoid</strong> and <strong>Tanh</strong> saturate at extremes, causing vanishing gradients. The highlighted yellow regions show saturation zones where gradients approach zero.</p>
+        <p><strong>ReLU</strong> is fast and avoids vanishing gradients but can have "dying neurons" (outputs stuck at zero). <strong>Leaky ReLU</strong> fixes this with a small negative slope (α).</p>
+        <p><strong>Try it:</strong> Move the x slider to see how each function responds, toggle derivatives to understand gradient flow!</p>
+    </div>
+
+    <script src="activation-functions.js"></script>
+</body>
+</html>

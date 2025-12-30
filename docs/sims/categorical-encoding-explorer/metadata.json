@@ -1,0 +1,36 @@
+{
+  "title": "Categorical Encoding Explorer",
+  "description": "Interactive comparison of label encoding and one-hot encoding showing how categorical variables are transformed for machine learning",
+  "creator": "Claude Code with microsim-generator skill",
+  "date": "2025-12-29",
+  "subject": ["machine learning", "data preprocessing", "categorical encoding", "label encoding", "one-hot encoding"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "interactivityType": "active",
+  "typicalLearningTime": "PT6M",
+  "bloomLevel": "Understand",
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "select",
+      "name": "exampleDataset",
+      "label": "Example Dataset",
+      "options": ["Default Sample", "Iris Species", "Car Types"]
+    },
+    {
+      "type": "checkbox",
+      "name": "dropFirst",
+      "label": "drop_first (One-Hot)",
+      "default": true
+    },
+    {
+      "type": "button",
+      "name": "addRow",
+      "label": "Add Row"
+    }
+  ]
+}

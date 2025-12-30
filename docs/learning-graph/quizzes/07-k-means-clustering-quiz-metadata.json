@@ -1,0 +1,99 @@
+{
+  "quiz_id": "07-k-means-clustering",
+  "chapter_id": "07",
+  "chapter_title": "K-Means Clustering and Unsupervised Learning",
+  "generated_date": "2025-12-28",
+  "version": "1.0",
+  "total_questions": 10,
+  "question_metadata": [
+    {
+      "question_number": 1,
+      "bloom_level": "Understand",
+      "concepts": ["K-Means Clustering", "Within-Cluster Variance", "Inertia"],
+      "difficulty": "Medium",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 2,
+      "bloom_level": "Remember",
+      "concepts": ["Cluster Assignment", "K-Means Clustering"],
+      "difficulty": "Easy",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 3,
+      "bloom_level": "Remember",
+      "concepts": ["K-Means++ Initialization", "K-Means Initialization"],
+      "difficulty": "Easy",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 4,
+      "bloom_level": "Apply",
+      "concepts": ["K-Means Clustering", "Data Preprocessing", "Feature Scaling"],
+      "difficulty": "Medium",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 5,
+      "bloom_level": "Understand",
+      "concepts": ["Elbow Method", "Inertia", "K-Means Clustering"],
+      "difficulty": "Medium",
+      "correct_answer": "C"
+    },
+    {
+      "question_number": 6,
+      "bloom_level": "Understand",
+      "concepts": ["Silhouette Score", "K-Means Clustering"],
+      "difficulty": "Medium",
+      "correct_answer": "C"
+    },
+    {
+      "question_number": 7,
+      "bloom_level": "Understand",
+      "concepts": ["Convergence Criteria", "K-Means Clustering"],
+      "difficulty": "Medium",
+      "correct_answer": "C"
+    },
+    {
+      "question_number": 8,
+      "bloom_level": "Analyze",
+      "concepts": ["Random Initialization", "K-Means Clustering", "Inertia"],
+      "difficulty": "Hard",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 9,
+      "bloom_level": "Apply",
+      "concepts": ["K-Means Clustering", "Cluster Structure Assumptions"],
+      "difficulty": "Medium",
+      "correct_answer": "C"
+    },
+    {
+      "question_number": 10,
+      "bloom_level": "Apply",
+      "concepts": ["K-Means Clustering", "Centroid", "Model Complexity"],
+      "difficulty": "Medium",
+      "correct_answer": "B"
+    }
+  ],
+  "bloom_distribution": {
+    "Remember": 2,
+    "Understand": 4,
+    "Apply": 3,
+    "Analyze": 1
+  },
+  "answer_distribution": {
+    "A": 0,
+    "B": 8,
+    "C": 2,
+    "D": 0
+  },
+  "quality_metrics": {
+    "bloom_balance_score": 85,
+    "answer_balance_score": 40,
+    "concept_coverage_score": 95,
+    "overall_quality_score": 73,
+    "notes": "Answer distribution is heavily skewed toward B. Consider revising some questions to achieve better balance across all options."
+  }
+}

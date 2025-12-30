@@ -1,0 +1,29 @@
+{
+  "title": "Distance Metrics Visualization",
+  "description": "Interactive side-by-side comparison of Euclidean and Manhattan distance metrics with draggable points",
+  "creator": "Claude Code with microsim-generator skill",
+  "date": "2025-12-29",
+  "subject": ["machine learning", "distance metrics", "euclidean distance", "manhattan distance", "KNN"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "interactivityType": "active",
+  "typicalLearningTime": "PT5M",
+  "bloomLevel": "Understand",
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "mouse",
+      "name": "dragPoint",
+      "label": "Drag Point B"
+    },
+    {
+      "type": "button",
+      "name": "reset",
+      "label": "Reset Point B"
+    }
+  ]
+}

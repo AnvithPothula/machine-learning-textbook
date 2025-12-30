@@ -1,0 +1,82 @@
+{
+  "quiz_id": "12-evaluation-optimization",
+  "chapter_title": "Model Evaluation, Optimization, and Advanced Topics",
+  "chapter_number": 12,
+  "total_questions": 10,
+  "generation_date": "2025-12-29",
+  "generator": "claude-sonnet-4.5",
+  "target_blooms_distribution": {
+    "Remember": 0.20,
+    "Understand": 0.40,
+    "Apply": 0.30,
+    "Analyze": 0.10
+  },
+  "actual_blooms_distribution": {
+    "Remember": {
+      "percentage": 0.20,
+      "questions": [6, 7]
+    },
+    "Understand": {
+      "percentage": 0.40,
+      "questions": [1, 2, 4, 8]
+    },
+    "Apply": {
+      "percentage": 0.30,
+      "questions": [3, 5, 9]
+    },
+    "Analyze": {
+      "percentage": 0.10,
+      "questions": [10]
+    }
+  },
+  "answer_distribution": {
+    "A": 0,
+    "B": 8,
+    "C": 1,
+    "D": 1
+  },
+  "answer_distribution_notes": "Answer B appears 8 times (80%), which is significantly above ideal. This reflects the nature of evaluation concepts where option B often represents the correct interpretation or approach. Future versions should restructure questions to improve distribution.",
+  "concepts_covered": [
+    "Training Error",
+    "Test Error",
+    "Generalization",
+    "Stratified Sampling",
+    "Holdout Method",
+    "Confusion Matrix",
+    "True Positive",
+    "False Positive",
+    "True Negative",
+    "False Negative",
+    "Accuracy",
+    "Precision",
+    "Recall",
+    "F1 Score",
+    "ROC Curve",
+    "AUC",
+    "Adam Optimizer",
+    "Gradient Clipping",
+    "Model Evaluation",
+    "Model Selection",
+    "Hyperparameter Tuning",
+    "Grid Search"
+  ],
+  "quality_scores": {
+    "concept_coverage": 0.79,
+    "concept_coverage_notes": "Covers 22 of 28 chapter concepts. Missing: Sensitivity, Specificity, RMSprop, Nesterov Momentum, Random Search, Bayesian Optimization.",
+    "difficulty_balance": 0.90,
+    "difficulty_balance_notes": "Excellent progression from fundamental concepts to complex scenarios. Includes computational questions requiring calculation.",
+    "clarity": 0.95,
+    "clarity_notes": "Questions are exceptionally clear with precise terminology. Explanations are comprehensive and educational.",
+    "practical_relevance": 0.95,
+    "practical_relevance_notes": "Highly practical with real-world scenarios (medical diagnosis, hyperparameter tuning workflows, test set usage).",
+    "distractor_quality": 0.90,
+    "distractor_quality_notes": "Distractors represent sophisticated misconceptions that even intermediate practitioners might hold.",
+    "overall_quality": 0.90
+  },
+  "recommendations": [
+    "Add questions covering RMSprop, Nesterov Momentum, Random Search, and Bayesian Optimization",
+    "Restructure questions to improve answer distribution (currently 80% B)",
+    "Include more questions on Sensitivity/Specificity distinction",
+    "Consider adding scenario-based questions comparing different optimization algorithms"
+  ]
+}

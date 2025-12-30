@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROC Curve Comparison</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .controls {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .controls label {
+            font-weight: 600;
+            color: #555;
+        }
+        .controls select {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #chartContainer {
+            position: relative;
+            height: 500px;
+            margin: 20px 0;
+        }
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .metric-card {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .metric-label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .metric-value {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .info-box {
+            background: #E3F2FD;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ROC Curve Comparison</h1>
+
+    <div class="container">
+        <div class="controls">
+            <label>Classifier:</label>
+            <select id="classifierSelect">
+                <option value="excellent">Excellent (AUC = 0.95)</option>
+                <option value="good" selected>Good (AUC = 0.85)</option>
+                <option value="fair">Fair (AUC = 0.70)</option>
+                <option value="poor">Poor (AUC = 0.60)</option>
+                <option value="random">Random (AUC = 0.50)</option>
+            </select>
+
+            <label>
+                <input type="checkbox" id="showAll" checked> Show all classifiers
+            </label>
+        </div>
+
+        <div id="chartContainer">
+            <canvas id="rocChart"></canvas>
+        </div>
+
+        <div class="metrics">
+            <div class="metric-card">
+                <div class="metric-label">AUC (Excellent)</div>
+                <div class="metric-value" style="color: #4CAF50;" id="auc-excellent">0.950</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">AUC (Good)</div>
+                <div class="metric-value" style="color: #2196F3;" id="auc-good">0.850</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">AUC (Fair)</div>
+                <div class="metric-value" style="color: #FF9800;" id="auc-fair">0.700</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">AUC (Poor)</div>
+                <div class="metric-value" style="color: #f44336;" id="auc-poor">0.600</div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h3>Understanding ROC Curves</h3>
+            <p><strong>ROC (Receiver Operating Characteristic)</strong> curve plots True Positive Rate (TPR) vs False Positive Rate (FPR) at various thresholds.</p>
+            <p><strong>AUC (Area Under Curve)</strong> measures overall classifier performance:</p>
+            <ul>
+                <li>AUC = 1.0: Perfect classifier</li>
+                <li>AUC = 0.9-1.0: Excellent</li>
+                <li>AUC = 0.8-0.9: Good</li>
+                <li>AUC = 0.7-0.8: Fair</li>
+                <li>AUC = 0.5-0.7: Poor</li>
+                <li>AUC = 0.5: Random guessing (diagonal line)</li>
+            </ul>
+            <p><strong>TPR (Recall)</strong> = TP / (TP + FN) - How many actual positives we catch</p>
+            <p><strong>FPR</strong> = FP / (FP + TN) - How many negatives we wrongly call positive</p>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('rocChart').getContext('2d');
+
+        // Generate ROC curve data
+        function generateROCCurve(auc) {
+            const points = [];
+            const steps = 20;
+            for (let i = 0; i <= steps; i++) {
+                const fpr = i / steps;
+                // Approximate TPR based on AUC
+                let tpr;
+                if (auc >= 0.9) {
+                    tpr = Math.pow(fpr, 0.3) * (auc - 0.1) / 0.9;
+                } else if (auc >= 0.5) {
+                    tpr = fpr + (auc - 0.5) * 2 * (1 - fpr);
+                } else {
+                    tpr = fpr;
+                }
+                tpr = Math.min(1, Math.max(0, tpr));
+                points.push({ x: fpr, y: tpr });
+            }
+            return points;
+        }
+
+        const classifiers = {
+            excellent: { auc: 0.95, color: '#4CAF50', label: 'Excellent (AUC=0.95)' },
+            good: { auc: 0.85, color: '#2196F3', label: 'Good (AUC=0.85)' },
+            fair: { auc: 0.70, color: '#FF9800', label: 'Fair (AUC=0.70)' },
+            poor: { auc: 0.60, color: '#f44336', label: 'Poor (AUC=0.60)' },
+            random: { auc: 0.50, color: '#9E9E9E', label: 'Random (AUC=0.50)' }
+        };
+
+        let chart;
+
+        function updateChart() {
+            const showAll = document.getElementById('showAll').checked;
+            const selected = document.getElementById('classifierSelect').value;
+
+            const datasets = [];
+
+            // Add diagonal (random classifier)
+            datasets.push({
+                label: 'Random Classifier',
+                data: [{ x: 0, y: 0 }, { x: 1, y: 1 }],
+                borderColor: '#999',
+                borderDash: [5, 5],
+                borderWidth: 2,
+                fill: false,
+                pointRadius: 0
+            });
+
+            // Add classifier curves
+            Object.entries(classifiers).forEach(([key, config]) => {
+                if (showAll || key === selected) {
+                    datasets.push({
+                        label: config.label,
+                        data: generateROCCurve(config.auc),
+                        borderColor: config.color,
+                        borderWidth: showAll && key === selected ? 4 : 2,
+                        fill: false,
+                        pointRadius: 0,
+                        tension: 0.4
+                    });
+                }
+            });
+
+            if (chart) {
+                chart.destroy();
+            }
+
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: { datasets },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'ROC Curves - TPR vs FPR',
+                            font: { size: 16 }
+                        },
+                        legend: {
+                            position: 'bottom'
+                        }
+                    },
+                    scales: {
+                        x: {
+                            type: 'linear',
+                            title: {
+                                display: true,
+                                text: 'False Positive Rate (FPR)'
+                            },
+                            min: 0,
+                            max: 1
+                        },
+                        y: {
+                            type: 'linear',
+                            title: {
+                                display: true,
+                                text: 'True Positive Rate (TPR / Recall)'
+                            },
+                            min: 0,
+                            max: 1
+                        }
+                    }
+                }
+            });
+        }
+
+        document.getElementById('classifierSelect').addEventListener('change', updateChart);
+        document.getElementById('showAll').addEventListener('change', updateChart);
+
+        updateChart();
+    </script>
+</body>
+</html>

@@ -107,8 +107,49 @@ plugins:
 nav:
   - Home: index.md
   - Course Description: course-description.md
+  - FAQ: faq.md
+  - Glossary: glossary.md
+  - Chapters:
+      - Overview: chapters/index.md
+      - 1. ML Fundamentals:
+          - Content: chapters/01-intro-to-ml-fundamentals/index.md
+          - Quiz: chapters/01-intro-to-ml-fundamentals/quiz.md
+      - 2. K-Nearest Neighbors:
+          - Content: chapters/02-k-nearest-neighbors/index.md
+          - Quiz: chapters/02-k-nearest-neighbors/quiz.md
+      - 3. Decision Trees:
+          - Content: chapters/03-decision-trees/index.md
+          - Quiz: chapters/03-decision-trees/quiz.md
+      - 4. Logistic Regression:
+          - Content: chapters/04-logistic-regression/index.md
+          - Quiz: chapters/04-logistic-regression/quiz.md
+      - 5. Regularization:
+          - Content: chapters/05-regularization/index.md
+          - Quiz: chapters/05-regularization/quiz.md
+      - 6. Support Vector Machines:
+          - Content: chapters/06-support-vector-machines/index.md
+          - Quiz: chapters/06-support-vector-machines/quiz.md
+      - 7. K-Means Clustering:
+          - Content: chapters/07-k-means-clustering/index.md
+          - Quiz: chapters/07-k-means-clustering/quiz.md
+      - 8. Data Preprocessing:
+          - Content: chapters/08-data-preprocessing/index.md
+          - Quiz: chapters/08-data-preprocessing/quiz.md
+      - 9. Neural Networks:
+          - Content: chapters/09-neural-networks/index.md
+          - Quiz: chapters/09-neural-networks/quiz.md
+      - 10. Convolutional Networks:
+          - Content: chapters/10-convolutional-networks/index.md
+          - Quiz: chapters/10-convolutional-networks/quiz.md
+      - 11. Transfer Learning:
+          - Content: chapters/11-transfer-learning/index.md
+          - Quiz: chapters/11-transfer-learning/quiz.md
+      - 12. Evaluation & Optimization:
+          - Content: chapters/12-evaluation-optimization/index.md
+          - Quiz: chapters/12-evaluation-optimization/quiz.md
   - Learning Graph:
       - Introduction: learning-graph/index.md
+      - Graph Viewer: sims/graph-viewer/index.md
       - Course Description Assessment: learning-graph/course-description-assessment.md
       - Concept List: learning-graph/concept-list.md
       - Concept Taxonomy: learning-graph/concept-taxonomy.md
@@ -116,6 +157,9 @@ nav:
       - Learning Graph (JSON): learning-graph/learning-graph.json
       - Quality Metrics: learning-graph/quality-metrics.md
       - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+      - Glossary Quality Report: learning-graph/glossary-quality-report.md
+      - FAQ Quality Report: learning-graph/faq-quality-report.md
+      - FAQ Coverage Gaps: learning-graph/faq-coverage-gaps.md
 
 # Extra Configuration
 extra:

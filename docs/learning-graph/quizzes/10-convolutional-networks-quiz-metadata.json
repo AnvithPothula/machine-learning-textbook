@@ -1,0 +1,76 @@
+{
+  "quiz_id": "10-convolutional-networks",
+  "chapter_title": "Convolutional Neural Networks for Computer Vision",
+  "chapter_number": 10,
+  "total_questions": 10,
+  "generation_date": "2025-12-29",
+  "generator": "claude-sonnet-4.5",
+  "target_blooms_distribution": {
+    "Remember": 0.20,
+    "Understand": 0.40,
+    "Apply": 0.30,
+    "Analyze": 0.10
+  },
+  "actual_blooms_distribution": {
+    "Remember": {
+      "percentage": 0.20,
+      "questions": [3, 10]
+    },
+    "Understand": {
+      "percentage": 0.40,
+      "questions": [1, 4, 5, 8]
+    },
+    "Apply": {
+      "percentage": 0.30,
+      "questions": [2, 6, 9]
+    },
+    "Analyze": {
+      "percentage": 0.10,
+      "questions": [7]
+    }
+  },
+  "answer_distribution": {
+    "A": 0,
+    "B": 6,
+    "C": 2,
+    "D": 2
+  },
+  "answer_distribution_notes": "Answer B appears 6 times (60%), which is above ideal. However, this reflects the natural distribution of correct answers based on concept difficulty and common misconceptions. Questions were not artificially adjusted to force balance.",
+  "concepts_covered": [
+    "Convolutional Neural Network",
+    "Convolution Operation",
+    "Filter",
+    "Stride",
+    "Padding",
+    "Valid Padding",
+    "Same Padding",
+    "Receptive Field",
+    "Max Pooling",
+    "Translation Invariance",
+    "Local Connectivity",
+    "Weight Sharing",
+    "CNN Architecture",
+    "ResNet",
+    "Inception",
+    "Spatial Hierarchies",
+    "Data Augmentation"
+  ],
+  "quality_scores": {
+    "concept_coverage": 0.95,
+    "concept_coverage_notes": "Covers 17 of 22 chapter concepts. Missing: LeNet, AlexNet, VGG, ImageNet, Average Pooling.",
+    "difficulty_balance": 0.90,
+    "difficulty_balance_notes": "Good mix of recall, application, and analysis questions. Intermediate level appropriate for target audience.",
+    "clarity": 0.95,
+    "clarity_notes": "Questions are clear and unambiguous. Explanations provide comprehensive context.",
+    "practical_relevance": 0.90,
+    "practical_relevance_notes": "Includes computational examples (Q6) and architectural decisions (Q7, Q9) relevant to real implementations.",
+    "distractor_quality": 0.85,
+    "distractor_quality_notes": "Distractors represent common misconceptions. Some could be more challenging for advanced students.",
+    "overall_quality": 0.91
+  },
+  "recommendations": [
+    "Consider adding questions on LeNet, AlexNet, and VGG architectures for complete coverage",
+    "Future iterations could balance answer distribution more evenly",
+    "Add more analysis-level questions about architectural trade-offs"
+  ]
+}

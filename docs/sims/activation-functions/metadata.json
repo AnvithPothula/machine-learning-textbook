@@ -1,0 +1,55 @@
+{
+  "title": "Activation Function Comparison",
+  "description": "Interactive comparison of sigmoid, tanh, ReLU, and Leaky ReLU activation functions with derivatives and property analysis",
+  "creator": "Claude Code with microsim-generator skill",
+  "date": "2025-12-29",
+  "subject": ["machine learning", "neural networks", "activation functions", "ReLU", "sigmoid", "tanh", "backpropagation"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "interactivityType": "active",
+  "typicalLearningTime": "PT7M",
+  "bloomLevel": "Understand",
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "slider",
+      "name": "xValue",
+      "label": "x value",
+      "min": -10,
+      "max": 10,
+      "default": 0,
+      "step": 0.1
+    },
+    {
+      "type": "checkbox",
+      "name": "showDerivatives",
+      "label": "Show derivatives",
+      "default": false
+    },
+    {
+      "type": "slider",
+      "name": "leakyAlpha",
+      "label": "Leaky ReLU α",
+      "min": 0.01,
+      "max": 0.3,
+      "default": 0.01,
+      "step": 0.01
+    },
+    {
+      "type": "checkbox",
+      "name": "showSaturation",
+      "label": "Highlight saturation",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "name": "comparisonMode",
+      "label": "Comparison mode",
+      "default": false
+    }
+  ]
+}

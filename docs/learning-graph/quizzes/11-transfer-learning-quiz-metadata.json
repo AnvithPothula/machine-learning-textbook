@@ -1,0 +1,69 @@
+{
+  "quiz_id": "11-transfer-learning",
+  "chapter_title": "Transfer Learning and Pre-Trained Models",
+  "chapter_number": 11,
+  "total_questions": 10,
+  "generation_date": "2025-12-29",
+  "generator": "claude-sonnet-4.5",
+  "target_blooms_distribution": {
+    "Remember": 0.20,
+    "Understand": 0.40,
+    "Apply": 0.30,
+    "Analyze": 0.10
+  },
+  "actual_blooms_distribution": {
+    "Remember": {
+      "percentage": 0.20,
+      "questions": [2, 5]
+    },
+    "Understand": {
+      "percentage": 0.40,
+      "questions": [1, 3, 6, 9]
+    },
+    "Apply": {
+      "percentage": 0.30,
+      "questions": [4, 7, 10]
+    },
+    "Analyze": {
+      "percentage": 0.10,
+      "questions": [8]
+    }
+  },
+  "answer_distribution": {
+    "A": 0,
+    "B": 7,
+    "C": 1,
+    "D": 2
+  },
+  "answer_distribution_notes": "Answer B appears 7 times (70%), which is significantly above ideal. This pattern emerged from conceptual accuracy requirements and could be improved in future iterations by restructuring question stems or reordering options.",
+  "concepts_covered": [
+    "Transfer Learning",
+    "Pre-Trained Model",
+    "Fine-Tuning",
+    "Feature Extraction",
+    "Domain Adaptation",
+    "Model Zoo",
+    "Validation Error",
+    "Online Learning",
+    "Optimizer",
+    "Momentum"
+  ],
+  "quality_scores": {
+    "concept_coverage": 1.00,
+    "concept_coverage_notes": "Covers all 10 chapter concepts comprehensively.",
+    "difficulty_balance": 0.90,
+    "difficulty_balance_notes": "Well-balanced progression from basic concepts to advanced applications. Good mix of theoretical and practical questions.",
+    "clarity": 0.95,
+    "clarity_notes": "Questions are precise and well-structured. Explanations include concrete examples and numerical details.",
+    "practical_relevance": 0.95,
+    "practical_relevance_notes": "Highly practical focus with real implementation scenarios (learning rates, PyTorch code, domain adaptation strategies).",
+    "distractor_quality": 0.85,
+    "distractor_quality_notes": "Distractors reflect common beginner mistakes and misconceptions about transfer learning workflow.",
+    "overall_quality": 0.93
+  },
+  "recommendations": [
+    "Restructure questions to achieve better answer distribution balance (currently 70% B)",
+    "Add more questions on model zoo selection and architecture comparison",
+    "Include questions about layer-wise unfreezing strategies"
+  ]
+}

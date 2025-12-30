@@ -10,7 +10,7 @@ quality_score: 100
 
 **Target Audience:** College undergraduate
 
-**Prerequisites:** Linear algebra, calculus, and programming experience
+**Prerequisites:** Linear algebra, calculus, and some Python programming experience
 
 ## Course Overview
 

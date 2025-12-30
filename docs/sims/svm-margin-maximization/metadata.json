@@ -1,0 +1,34 @@
+{
+  "title": "SVM Margin Maximization",
+  "description": "Interactive visualization showing how Support Vector Machines maximize the margin between classes and identify support vectors",
+  "creator": "Claude Code with microsim-generator skill",
+  "date": "2025-12-29",
+  "subject": ["machine learning", "support vector machines", "SVM", "classification", "margin maximization", "support vectors"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "interactivityType": "active",
+  "typicalLearningTime": "PT10M",
+  "bloomLevel": "Understand",
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "slider",
+      "name": "marginWidth",
+      "label": "Margin Width",
+      "min": 60,
+      "max": 200,
+      "default": 140,
+      "step": 10
+    },
+    {
+      "type": "checkbox",
+      "name": "showMargins",
+      "label": "Show Margin Boundaries",
+      "default": true
+    }
+  ]
+}

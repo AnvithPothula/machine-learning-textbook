@@ -1,0 +1,17 @@
+{
+  "title": "Training vs Validation Error Curves",
+  "description": "Interactive visualization showing training and validation error curves for different learning scenarios",
+  "creator": "Claude Code with microsim-generator skill",
+  "date": "2025-12-29",
+  "subject": ["machine learning", "training", "validation", "overfitting", "underfitting", "early stopping"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "interactivityType": "active",
+  "typicalLearningTime": "PT4M",
+  "bloomLevel": "Understand",
+  "library": "Chart.js"
+}
