@@ -1,0 +1,183 @@
+{
+  "chapter": "Regularization Techniques",
+  "chapter_number": 5,
+  "chapter_file": "docs/chapters/05-regularization/index.md",
+  "quiz_file": "docs/chapters/05-regularization/quiz.md",
+  "generated_date": "2025-12-29",
+  "total_questions": 10,
+  "content_readiness_score": 100,
+  "overall_quality_score": 94,
+  "questions": [
+    {
+      "id": "ch05-q001",
+      "number": 1,
+      "question_text": "What is the primary purpose of regularization in machine learning?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concept_tested": "Regularization",
+      "distractor_quality": 0.87,
+      "explanation_word_count": 61
+    },
+    {
+      "id": "ch05-q002",
+      "number": 2,
+      "question_text": "What is the mathematical form of the L2 penalty term in Ridge regression?",
+      "correct_answer": "D",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "L2 Regularization",
+      "distractor_quality": 0.89,
+      "explanation_word_count": 58
+    },
+    {
+      "id": "ch05-q003",
+      "number": 3,
+      "question_text": "What distinguishes L1 regularization (Lasso) from L2 regularization (Ridge)?",
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "L1 Regularization",
+      "distractor_quality": 0.90,
+      "explanation_word_count": 67
+    },
+    {
+      "id": "ch05-q004",
+      "number": 4,
+      "question_text": "In scikit-learn's Ridge and Lasso classes, what does the alpha parameter control?",
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "Ridge Regression",
+      "distractor_quality": 0.86,
+      "explanation_word_count": 63
+    },
+    {
+      "id": "ch05-q005",
+      "number": 5,
+      "question_text": "Why is feature standardization essential before applying regularization?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Regularization",
+      "distractor_quality": 0.91,
+      "explanation_word_count": 78
+    },
+    {
+      "id": "ch05-q006",
+      "number": 6,
+      "question_text": "Given a dataset with 100 features where you suspect only 10 are truly predictive, which regularization method would be most appropriate?",
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Lasso Regression",
+      "distractor_quality": 0.88,
+      "explanation_word_count": 75
+    },
+    {
+      "id": "ch05-q007",
+      "number": 7,
+      "question_text": "In the geometric interpretation of Ridge regression with two coefficients, what shape does the L2 constraint region form?",
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "L2 Regularization",
+      "distractor_quality": 0.89,
+      "explanation_word_count": 70
+    },
+    {
+      "id": "ch05-q008",
+      "number": 8,
+      "question_text": "What shape does the L1 constraint region form in two-dimensional coefficient space?",
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "L1 Regularization",
+      "distractor_quality": 0.88,
+      "explanation_word_count": 72
+    },
+    {
+      "id": "ch05-q009",
+      "number": 9,
+      "question_text": "You fit Ridge regression with alpha values [0.01, 0.1, 1.0, 10.0, 100.0] and observe the following test R² scores: [0.72, 0.78, 0.82, 0.79, 0.65]. What does this pattern suggest?",
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "hard",
+      "concept_tested": "Ridge Regression",
+      "distractor_quality": 0.93,
+      "explanation_word_count": 88
+    },
+    {
+      "id": "ch05-q010",
+      "number": 10,
+      "question_text": "In scikit-learn's LogisticRegression, the C parameter is the inverse of regularization strength. If C=0.1, what does this imply?",
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Regularization",
+      "distractor_quality": 0.90,
+      "explanation_word_count": 70
+    }
+  ],
+  "answer_distribution": {
+    "A": 3,
+    "B": 3,
+    "C": 2,
+    "D": 2
+  },
+  "bloom_distribution": {
+    "Remember": 3,
+    "Understand": 4,
+    "Apply": 2,
+    "Analyze": 1,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "bloom_distribution_target": {
+    "Remember": 2,
+    "Understand": 4,
+    "Apply": 3,
+    "Analyze": 1,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "bloom_deviation": {
+    "Remember": 1,
+    "Understand": 0,
+    "Apply": -1,
+    "Analyze": 0,
+    "total_deviation": 2.0
+  },
+  "concept_coverage": {
+    "total_concepts": 5,
+    "tested_concepts": 5,
+    "coverage_percentage": 100,
+    "priority_1_concepts": 5,
+    "priority_1_tested": 5,
+    "priority_1_coverage": 100
+  },
+  "quality_scores": {
+    "content_readiness": 100,
+    "bloom_distribution": 23,
+    "answer_balance": 15,
+    "concept_coverage": 20,
+    "question_quality": 29,
+    "distractor_quality": 28,
+    "explanation_quality": 15,
+    "total": 94
+  },
+  "notes": [
+    "Excellent content readiness (100/100)",
+    "Strong Bloom's distribution (30% Remember, 40% Understand, 20% Apply, 10% Analyze)",
+    "Excellent answer balance: A=30%, B=30%, C=20%, D=20%",
+    "Perfect concept coverage (100% - all 5 concepts tested)",
+    "All questions have clear, educational explanations",
+    "Average distractor quality: 89.1%",
+    "Includes practical application scenarios and geometric understanding"
+  ],
+  "recommendations": [
+    "Excellent quiz - no improvements needed",
+    "Perfect concept coverage and well-balanced distribution",
+    "Strong mix of conceptual and applied questions"
+  ]
+}

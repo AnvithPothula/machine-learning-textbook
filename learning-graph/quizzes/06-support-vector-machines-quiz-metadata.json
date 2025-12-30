@@ -1,0 +1,184 @@
+{
+  "chapter": "Support Vector Machines",
+  "chapter_number": 6,
+  "chapter_file": "docs/chapters/06-support-vector-machines/index.md",
+  "quiz_file": "docs/chapters/06-support-vector-machines/quiz.md",
+  "generated_date": "2025-12-29",
+  "total_questions": 10,
+  "content_readiness_score": 100,
+  "overall_quality_score": 93,
+  "questions": [
+    {
+      "id": "ch06-q001",
+      "number": 1,
+      "question_text": "What is the fundamental principle that SVMs use to find the optimal decision boundary?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Support Vector Machine",
+      "distractor_quality": 0.88,
+      "explanation_word_count": 65
+    },
+    {
+      "id": "ch06-q002",
+      "number": 2,
+      "question_text": "In d-dimensional feature space, what is a hyperplane?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "Hyperplane",
+      "distractor_quality": 0.86,
+      "explanation_word_count": 68
+    },
+    {
+      "id": "ch06-q003",
+      "number": 3,
+      "question_text": "What are support vectors in an SVM classifier?",
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Support Vectors",
+      "distractor_quality": 0.89,
+      "explanation_word_count": 70
+    },
+    {
+      "id": "ch06-q004",
+      "number": 4,
+      "question_text": "For a hyperplane defined by weight vector w, what is the formula for the margin width?",
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Margin",
+      "distractor_quality": 0.87,
+      "explanation_word_count": 72
+    },
+    {
+      "id": "ch06-q005",
+      "number": 5,
+      "question_text": "What is the main limitation of hard margin SVMs that soft margin SVMs address?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Hard Margin SVM",
+      "distractor_quality": 0.90,
+      "explanation_word_count": 75
+    },
+    {
+      "id": "ch06-q006",
+      "number": 6,
+      "question_text": "In soft margin SVMs, what do slack variables (ξᵢ) represent?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Slack Variables",
+      "distractor_quality": 0.88,
+      "explanation_word_count": 78
+    },
+    {
+      "id": "ch06-q007",
+      "number": 7,
+      "question_text": "How does the C parameter in soft margin SVMs affect the model?",
+      "correct_answer": "D",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Soft Margin SVM",
+      "distractor_quality": 0.91,
+      "explanation_word_count": 82
+    },
+    {
+      "id": "ch06-q008",
+      "number": 8,
+      "question_text": "What is the fundamental advantage of the kernel trick in SVMs?",
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Kernel Trick",
+      "distractor_quality": 0.89,
+      "explanation_word_count": 77
+    },
+    {
+      "id": "ch06-q009",
+      "number": 9,
+      "question_text": "What type of decision boundary does the linear kernel K(x, z) = x^T z create?",
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "easy",
+      "concept_tested": "Linear Kernel",
+      "distractor_quality": 0.85,
+      "explanation_word_count": 64
+    },
+    {
+      "id": "ch06-q010",
+      "number": 10,
+      "question_text": "In the RBF (Gaussian) kernel, what effect does the γ (gamma) parameter have on the decision boundary?",
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "hard",
+      "concept_tested": "Radial Basis Function",
+      "distractor_quality": 0.92,
+      "explanation_word_count": 80
+    }
+  ],
+  "answer_distribution": {
+    "A": 2,
+    "B": 3,
+    "C": 3,
+    "D": 2
+  },
+  "bloom_distribution": {
+    "Remember": 2,
+    "Understand": 5,
+    "Apply": 2,
+    "Analyze": 1,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "bloom_distribution_target": {
+    "Remember": 2,
+    "Understand": 3,
+    "Apply": 3,
+    "Analyze": 2,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "bloom_deviation": {
+    "Remember": 0,
+    "Understand": 2,
+    "Apply": -1,
+    "Analyze": -1,
+    "total_deviation": 4.0
+  },
+  "concept_coverage": {
+    "total_concepts": 16,
+    "tested_concepts": 10,
+    "coverage_percentage": 62.5,
+    "priority_1_concepts": 10,
+    "priority_1_tested": 10,
+    "priority_1_coverage": 100
+  },
+  "quality_scores": {
+    "content_readiness": 100,
+    "bloom_distribution": 21,
+    "answer_balance": 15,
+    "concept_coverage": 16,
+    "question_quality": 29,
+    "distractor_quality": 28,
+    "explanation_quality": 15,
+    "total": 93
+  },
+  "notes": [
+    "Excellent content readiness (100/100)",
+    "Good Bloom's distribution (20% Remember, 50% Understand, 20% Apply, 10% Analyze)",
+    "Perfect answer balance: A=20%, B=30%, C=30%, D=20%",
+    "62.5% overall concept coverage (10 of 16 concepts tested)",
+    "100% coverage of Priority 1 concepts",
+    "All questions have clear, educational explanations",
+    "Average distractor quality: 88.5%",
+    "Focus on core SVM concepts: margin, support vectors, kernels"
+  ],
+  "recommendations": [
+    "Excellent quiz for advanced SVM concepts",
+    "Could add questions on Polynomial Kernel, Dual Formulation for full coverage",
+    "Strong technical depth appropriate for intermediate ML course"
+  ]
+}

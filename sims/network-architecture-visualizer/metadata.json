@@ -1,0 +1,48 @@
+{
+  "title": "Neural Network Architecture Visualizer",
+  "description": "Interactive tool for building and visualizing neural network architectures with adjustable layers and neurons, showing connections and parameter counts",
+  "creator": "Claude Code with microsim-generator skill",
+  "date": "2025-12-29",
+  "subject": ["machine learning", "neural networks", "network architecture", "deep learning", "fully connected layers", "forward propagation"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "interactivityType": "active",
+  "typicalLearningTime": "PT8M",
+  "bloomLevel": "Understand",
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "slider",
+      "name": "hiddenLayer1",
+      "label": "Hidden Layer 1 Neurons",
+      "min": 1,
+      "max": 20,
+      "default": 8,
+      "step": 1
+    },
+    {
+      "type": "slider",
+      "name": "hiddenLayer2",
+      "label": "Hidden Layer 2 Neurons",
+      "min": 1,
+      "max": 20,
+      "default": 6,
+      "step": 1
+    },
+    {
+      "type": "select",
+      "name": "preset",
+      "label": "Architecture Preset",
+      "options": ["Custom", "Shallow (4-8-3)", "Deep (4-6-6-6-3)", "Wide (4-16-3)"]
+    },
+    {
+      "type": "button",
+      "name": "animate",
+      "label": "Animate Forward Pass"
+    }
+  ]
+}

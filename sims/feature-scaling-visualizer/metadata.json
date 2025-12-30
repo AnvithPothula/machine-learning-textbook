@@ -1,0 +1,62 @@
+{
+  "title": "Feature Scaling Visualizer",
+  "description": "Interactive comparison of min-max scaling and z-score standardization showing effects on different data distributions with histograms and box plots",
+  "creator": "Claude Code with microsim-generator skill",
+  "date": "2025-12-29",
+  "subject": ["machine learning", "data preprocessing", "normalization", "standardization", "feature scaling"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "interactivityType": "active",
+  "typicalLearningTime": "PT8M",
+  "bloomLevel": "Understand",
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "select",
+      "name": "distribution",
+      "label": "Distribution Type",
+      "options": ["Normal", "Skewed", "With Outliers", "Bimodal"]
+    },
+    {
+      "type": "slider",
+      "name": "sampleSize",
+      "label": "Sample Size",
+      "min": 100,
+      "max": 10000,
+      "default": 1000,
+      "step": 100
+    },
+    {
+      "type": "slider",
+      "name": "mean",
+      "label": "Mean",
+      "min": 50,
+      "max": 150,
+      "default": 100,
+      "step": 5
+    },
+    {
+      "type": "slider",
+      "name": "stdDev",
+      "label": "Standard Deviation",
+      "min": 5,
+      "max": 50,
+      "default": 15,
+      "step": 1
+    },
+    {
+      "type": "button",
+      "name": "addOutliers",
+      "label": "Add Outliers"
+    },
+    {
+      "type": "button",
+      "name": "reset",
+      "label": "Reset"
+    }
+  ]
+}

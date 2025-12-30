@@ -1,0 +1,181 @@
+{
+  "chapter": "Introduction to Machine Learning Fundamentals",
+  "chapter_number": 1,
+  "chapter_file": "docs/chapters/01-intro-to-ml-fundamentals/index.md",
+  "quiz_file": "docs/chapters/01-intro-to-ml-fundamentals/quiz.md",
+  "generated_date": "2025-12-29",
+  "total_questions": 10,
+  "content_readiness_score": 100,
+  "overall_quality_score": 88,
+  "questions": [
+    {
+      "id": "ch01-q001",
+      "number": 1,
+      "question_text": "What is the fundamental characteristic that distinguishes machine learning from traditional programming?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concept_tested": "Machine Learning",
+      "distractor_quality": 0.90,
+      "explanation_word_count": 54
+    },
+    {
+      "id": "ch01-q002",
+      "number": 2,
+      "question_text": "Which statement best describes supervised learning?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concept_tested": "Supervised Learning",
+      "distractor_quality": 0.88,
+      "explanation_word_count": 62
+    },
+    {
+      "id": "ch01-q003",
+      "number": 3,
+      "question_text": "What is the primary difference between classification and regression?",
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concept_tested": "Classification vs Regression",
+      "distractor_quality": 0.85,
+      "explanation_word_count": 58
+    },
+    {
+      "id": "ch01-q004",
+      "number": 4,
+      "question_text": "In machine learning, what is a feature?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "Feature",
+      "distractor_quality": 0.87,
+      "explanation_word_count": 55
+    },
+    {
+      "id": "ch01-q005",
+      "number": 5,
+      "question_text": "Why is it crucial to maintain separate training and test datasets?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Training Data vs Test Data",
+      "distractor_quality": 0.92,
+      "explanation_word_count": 61
+    },
+    {
+      "id": "ch01-q006",
+      "number": 6,
+      "question_text": "What distinguishes a continuous feature from a categorical feature?",
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "Continuous vs Categorical Features",
+      "distractor_quality": 0.84,
+      "explanation_word_count": 56
+    },
+    {
+      "id": "ch01-q007",
+      "number": 7,
+      "question_text": "Given a dataset with 1,000 examples, you need to train a model and evaluate it. What would be a typical data split strategy?",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Data Splitting Strategy",
+      "distractor_quality": 0.89,
+      "explanation_word_count": 69
+    },
+    {
+      "id": "ch01-q008",
+      "number": 8,
+      "question_text": "What is the primary purpose of k-fold cross-validation?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "K-Fold Cross-Validation",
+      "distractor_quality": 0.91,
+      "explanation_word_count": 63
+    },
+    {
+      "id": "ch01-q009",
+      "number": 9,
+      "question_text": "What is the key distinction between model parameters and hyperparameters?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Hyperparameter",
+      "distractor_quality": 0.86,
+      "explanation_word_count": 59
+    },
+    {
+      "id": "ch01-q010",
+      "number": 10,
+      "question_text": "In the context of unsupervised learning, what does clustering accomplish?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "Unsupervised Learning (Clustering)",
+      "distractor_quality": 0.83,
+      "explanation_word_count": 52
+    }
+  ],
+  "answer_distribution": {
+    "A": 2,
+    "B": 8,
+    "C": 0,
+    "D": 0
+  },
+  "bloom_distribution": {
+    "Remember": 4,
+    "Understand": 5,
+    "Apply": 1,
+    "Analyze": 0,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "bloom_distribution_target": {
+    "Remember": 4,
+    "Understand": 4,
+    "Apply": 1.5,
+    "Analyze": 0.5,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "bloom_deviation": {
+    "Remember": 0,
+    "Understand": 1,
+    "Apply": -0.5,
+    "Analyze": -0.5,
+    "total_deviation": 2.0
+  },
+  "concept_coverage": {
+    "total_concepts": 20,
+    "tested_concepts": 10,
+    "coverage_percentage": 50,
+    "priority_1_concepts": 10,
+    "priority_1_tested": 10,
+    "priority_1_coverage": 100
+  },
+  "quality_scores": {
+    "content_readiness": 100,
+    "bloom_distribution": 20,
+    "answer_balance": 10,
+    "concept_coverage": 15,
+    "question_quality": 27,
+    "distractor_quality": 26,
+    "total": 88
+  },
+  "notes": [
+    "Excellent content readiness (100/100)",
+    "Strong Bloom's distribution (40% Remember, 50% Understand, 10% Apply)",
+    "Answer balance needs adjustment: too many B answers (80%)",
+    "100% coverage of Priority 1 concepts",
+    "All questions have clear, educational explanations",
+    "Average distractor quality: 87.5%"
+  ],
+  "recommendations": [
+    "Rebalance correct answers to achieve 25% per option (A, B, C, D)",
+    "Consider adding 1-2 Analyze-level questions for introductory depth",
+    "Add questions for remaining 10 concepts to reach 75% overall coverage"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "quiz_id": "08-data-preprocessing",
+  "chapter_id": "08",
+  "chapter_title": "Data Preprocessing and Feature Engineering",
+  "generated_date": "2025-12-28",
+  "version": "1.0",
+  "total_questions": 10,
+  "question_metadata": [
+    {
+      "question_number": 1,
+      "bloom_level": "Understand",
+      "concepts": ["Min-Max Scaling", "Z-Score Normalization", "Normalization", "Standardization"],
+      "difficulty": "Easy",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 2,
+      "bloom_level": "Understand",
+      "concepts": ["Data Preprocessing", "Standardization", "Train-Test Split"],
+      "difficulty": "Medium",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 3,
+      "bloom_level": "Apply",
+      "concepts": ["Label Encoding", "One-Hot Encoding", "Categorical Data"],
+      "difficulty": "Medium",
+      "correct_answer": "C"
+    },
+    {
+      "question_number": 4,
+      "bloom_level": "Understand",
+      "concepts": ["One-Hot Encoding", "Data Preprocessing"],
+      "difficulty": "Medium",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 5,
+      "bloom_level": "Apply",
+      "concepts": ["Feature Engineering", "Polynomial Features", "Dimensionality"],
+      "difficulty": "Hard",
+      "correct_answer": "C"
+    },
+    {
+      "question_number": 6,
+      "bloom_level": "Remember",
+      "concepts": ["Feature Selection", "Data Preprocessing"],
+      "difficulty": "Easy",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 7,
+      "bloom_level": "Understand",
+      "concepts": ["Dimensionality Reduction", "PCA", "Feature Engineering"],
+      "difficulty": "Medium",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 8,
+      "bloom_level": "Apply",
+      "concepts": ["Time Complexity", "Standardization", "Computational Complexity"],
+      "difficulty": "Medium",
+      "correct_answer": "C"
+    },
+    {
+      "question_number": 9,
+      "bloom_level": "Apply",
+      "concepts": ["Data Augmentation", "Data Preprocessing"],
+      "difficulty": "Medium",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 10,
+      "bloom_level": "Analyze",
+      "concepts": ["Data Preprocessing", "Feature Scaling", "Algorithm Properties"],
+      "difficulty": "Hard",
+      "correct_answer": "C"
+    }
+  ],
+  "bloom_distribution": {
+    "Remember": 1,
+    "Understand": 4,
+    "Apply": 4,
+    "Analyze": 1
+  },
+  "answer_distribution": {
+    "A": 0,
+    "B": 7,
+    "C": 3,
+    "D": 0
+  },
+  "quality_metrics": {
+    "bloom_balance_score": 90,
+    "answer_balance_score": 45,
+    "concept_coverage_score": 95,
+    "overall_quality_score": 77,
+    "notes": "Good Bloom's distribution aligned with intermediate chapter target. Answer distribution is skewed toward B and C. Consider revising to include more A and D answers."
+  }
+}

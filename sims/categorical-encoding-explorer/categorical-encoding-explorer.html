@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorical Encoding Explorer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        #controls {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #controls label {
+            font-weight: 600;
+            color: #555;
+            margin-right: 10px;
+        }
+        #controls select {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        #controls button {
+            background: #009688;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        #controls button:hover {
+            background: #00796B;
+        }
+        #p5-canvas {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .info-box {
+            background: #E0F2F1;
+            border-left: 4px solid #009688;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            color: #00796B;
+        }
+    </style>
+</head>
+<body>
+    <h1>Categorical Encoding Explorer</h1>
+    <div class="description">
+        Compare label encoding and one-hot encoding for categorical variables
+    </div>
+
+    <div id="controls"></div>
+
+    <div id="p5-canvas"></div>
+
+    <div class="info-box">
+        <h3>About Categorical Encoding</h3>
+        <p><strong>Label Encoding</strong> assigns integer labels to categories (e.g., red=0, green=1, blue=2). It's memory-efficient but introduces artificial ordering.</p>
+        <p><strong>One-Hot Encoding</strong> creates binary columns for each category. It avoids artificial ordering but increases dimensionality.</p>
+        <p><strong>drop_first=True</strong> removes one column per categorical variable to avoid multicollinearity (the dummy variable trap).</p>
+        <p><strong>Try it:</strong> Switch between example datasets and toggle drop_first to see how encoding works!</p>
+    </div>
+
+    <script src="categorical-encoding-explorer.js"></script>
+</body>
+</html>

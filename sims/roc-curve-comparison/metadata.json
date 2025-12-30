@@ -1,0 +1,31 @@
+{
+  "title": "ROC Curve Comparison",
+  "description": "Interactive comparison of ROC curves for classifiers with different performance levels",
+  "creator": "Claude Code with microsim-generator skill",
+  "date": "2025-12-29",
+  "subject": ["machine learning", "evaluation", "ROC curve", "AUC", "classifier performance"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "interactivityType": "active",
+  "typicalLearningTime": "PT5M",
+  "bloomLevel": "Understand",
+  "library": "Chart.js",
+  "controls": [
+    {
+      "type": "select",
+      "name": "classifier",
+      "label": "Classifier Performance",
+      "options": ["Excellent (AUC=0.95)", "Good (AUC=0.85)", "Fair (AUC=0.70)", "Poor (AUC=0.60)", "Random (AUC=0.50)"]
+    },
+    {
+      "type": "checkbox",
+      "name": "showAll",
+      "label": "Show all classifiers",
+      "default": true
+    }
+  ]
+}

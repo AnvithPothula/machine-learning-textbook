@@ -1,0 +1,16 @@
+{
+  "FOUND": "LightCoral",
+  "KNN": "PeachPuff",
+  "TREE": "LightYellow",
+  "LOGREG": "Honeydew",
+  "REG": "MistyRose",
+  "SVM": "PaleTurquoise",
+  "CLUST": "Lavender",
+  "NN": "PowderBlue",
+  "CNN": "PaleGreen",
+  "TL": "Aquamarine",
+  "EVAL": "LightPink",
+  "PREP": "LavenderBlush",
+  "OPT": "Plum",
+  "MISC": "Gainsboro"
+}

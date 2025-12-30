@@ -1,0 +1,42 @@
+{
+  "title": "Sigmoid Function Explorer",
+  "description": "Interactive visualization showing how sigmoid function transforms linear model outputs z = mx + b into probabilities for binary classification",
+  "creator": "Claude Code with microsim-generator skill",
+  "date": "2025-12-29",
+  "subject": ["machine learning", "logistic regression", "sigmoid function", "probability", "binary classification"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "interactivityType": "active",
+  "typicalLearningTime": "PT5M",
+  "bloomLevel": "Understand",
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "slider",
+      "name": "slope",
+      "label": "Slope (m)",
+      "min": -5,
+      "max": 5,
+      "default": 1,
+      "step": 0.1
+    },
+    {
+      "type": "slider",
+      "name": "intercept",
+      "label": "Intercept (b)",
+      "min": -5,
+      "max": 5,
+      "default": 0,
+      "step": 0.1
+    },
+    {
+      "type": "button",
+      "name": "reset",
+      "label": "Reset Parameters"
+    }
+  ]
+}

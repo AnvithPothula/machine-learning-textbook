@@ -1,0 +1,10 @@
+{
+  "title": "Machine Learning: Algorithms and Applications",
+  "description": "A comprehensive learning graph for machine learning covering supervised learning (KNN, decision trees, logistic regression, SVMs), unsupervised learning (k-means clustering), and deep learning (neural networks, CNNs, transfer learning). Designed for college undergraduate students with prerequisites in linear algebra, calculus, and programming.",
+  "creator": "Claude Code AI",
+  "date": "2025-12-28",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}

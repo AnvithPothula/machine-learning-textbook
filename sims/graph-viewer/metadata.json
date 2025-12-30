@@ -1,0 +1,34 @@
+{
+  "title": "Learning Graph Viewer",
+  "description": "Interactive network visualization showing course concepts, their relationships, and dependencies using vis-network",
+  "creator": "Claude Code with microsim-generator skill",
+  "date": "2025-12-29",
+  "subject": ["learning graph", "concept map", "knowledge graph", "network visualization", "dependencies"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "interactivityType": "active",
+  "typicalLearningTime": "PT15M",
+  "bloomLevel": "Understand",
+  "library": "vis-network",
+  "controls": [
+    {
+      "type": "search",
+      "name": "conceptSearch",
+      "label": "Search Concepts"
+    },
+    {
+      "type": "checkboxes",
+      "name": "categoryFilter",
+      "label": "Category Filters"
+    },
+    {
+      "type": "drag",
+      "name": "navigation",
+      "label": "Drag to pan, scroll to zoom"
+    }
+  ]
+}

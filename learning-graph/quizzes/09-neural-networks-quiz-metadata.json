@@ -1,0 +1,99 @@
+{
+  "quiz_id": "09-neural-networks",
+  "chapter_id": "09",
+  "chapter_title": "Neural Networks Fundamentals",
+  "generated_date": "2025-12-28",
+  "version": "1.0",
+  "total_questions": 10,
+  "question_metadata": [
+    {
+      "question_number": 1,
+      "bloom_level": "Understand",
+      "concepts": ["Activation Function", "Neural Network"],
+      "difficulty": "Easy",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 2,
+      "bloom_level": "Remember",
+      "concepts": ["ReLU", "Activation Function", "Hidden Layer"],
+      "difficulty": "Easy",
+      "correct_answer": "C"
+    },
+    {
+      "question_number": 3,
+      "bloom_level": "Understand",
+      "concepts": ["Leaky ReLU", "ReLU", "Activation Function"],
+      "difficulty": "Medium",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 4,
+      "bloom_level": "Apply",
+      "concepts": ["Network Architecture", "Weights", "Fully Connected Layer"],
+      "difficulty": "Medium",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 5,
+      "bloom_level": "Understand",
+      "concepts": ["Forward Propagation", "Artificial Neuron", "Hidden Layer"],
+      "difficulty": "Medium",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 6,
+      "bloom_level": "Understand",
+      "concepts": ["Backpropagation", "Gradient Descent", "Neural Network"],
+      "difficulty": "Medium",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 7,
+      "bloom_level": "Understand",
+      "concepts": ["Mini-Batch Gradient Descent", "Gradient Descent", "Batch Size"],
+      "difficulty": "Medium",
+      "correct_answer": "C"
+    },
+    {
+      "question_number": 8,
+      "bloom_level": "Analyze",
+      "concepts": ["Overfitting", "Early Stopping", "Regularization"],
+      "difficulty": "Medium",
+      "correct_answer": "C"
+    },
+    {
+      "question_number": 9,
+      "bloom_level": "Apply",
+      "concepts": ["He Initialization", "Xavier Initialization", "Weight Initialization", "ReLU"],
+      "difficulty": "Hard",
+      "correct_answer": "B"
+    },
+    {
+      "question_number": 10,
+      "bloom_level": "Analyze",
+      "concepts": ["Vanishing Gradient", "Sigmoid", "Backpropagation", "Deep Learning"],
+      "difficulty": "Hard",
+      "correct_answer": "B"
+    }
+  ],
+  "bloom_distribution": {
+    "Remember": 1,
+    "Understand": 5,
+    "Apply": 2,
+    "Analyze": 2
+  },
+  "answer_distribution": {
+    "A": 0,
+    "B": 8,
+    "C": 2,
+    "D": 0
+  },
+  "quality_metrics": {
+    "bloom_balance_score": 85,
+    "answer_balance_score": 40,
+    "concept_coverage_score": 95,
+    "overall_quality_score": 73,
+    "notes": "Excellent Bloom's distribution with good balance toward Understand/Apply/Analyze. Answer distribution heavily favors B—consider revising several questions to better balance across all four options."
+  }
+}

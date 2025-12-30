@@ -1,0 +1,183 @@
+{
+  "chapter": "Logistic Regression and Classification",
+  "chapter_number": 4,
+  "chapter_file": "docs/chapters/04-logistic-regression/index.md",
+  "quiz_file": "docs/chapters/04-logistic-regression/quiz.md",
+  "generated_date": "2025-12-29",
+  "total_questions": 10,
+  "content_readiness_score": 100,
+  "overall_quality_score": 92,
+  "questions": [
+    {
+      "id": "ch04-q001",
+      "number": 1,
+      "question_text": "What fundamental problem does the sigmoid function solve when using linear models for classification?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Sigmoid Function",
+      "distractor_quality": 0.88,
+      "explanation_word_count": 62
+    },
+    {
+      "id": "ch04-q002",
+      "number": 2,
+      "question_text": "In logistic regression for binary classification, what does the model output P(y = 1 | x) represent?",
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "Binary Classification",
+      "distractor_quality": 0.85,
+      "explanation_word_count": 58
+    },
+    {
+      "id": "ch04-q003",
+      "number": 3,
+      "question_text": "What is the mathematical form of the sigmoid function?",
+      "correct_answer": "D",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "Sigmoid Function",
+      "distractor_quality": 0.87,
+      "explanation_word_count": 66
+    },
+    {
+      "id": "ch04-q004",
+      "number": 4,
+      "question_text": "What loss function does logistic regression minimize during training?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "Log-Loss",
+      "distractor_quality": 0.90,
+      "explanation_word_count": 68
+    },
+    {
+      "id": "ch04-q005",
+      "number": 5,
+      "question_text": "Given a true label of 1 and a predicted probability of 0.1, why does log-loss assign a large penalty?",
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Log-Loss",
+      "distractor_quality": 0.89,
+      "explanation_word_count": 82
+    },
+    {
+      "id": "ch04-q006",
+      "number": 6,
+      "question_text": "How many binary classifiers must be trained for a 5-class problem using the one-vs-one strategy?",
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "One-vs-One",
+      "distractor_quality": 0.91,
+      "explanation_word_count": 75
+    },
+    {
+      "id": "ch04-q007",
+      "number": 7,
+      "question_text": "What is the primary advantage of the one-vs-all (one-vs-rest) multiclass strategy?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "One-vs-All",
+      "distractor_quality": 0.88,
+      "explanation_word_count": 79
+    },
+    {
+      "id": "ch04-q008",
+      "number": 8,
+      "question_text": "What property does the softmax function guarantee for multiclass probability predictions?",
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Softmax Function",
+      "distractor_quality": 0.90,
+      "explanation_word_count": 84
+    },
+    {
+      "id": "ch04-q009",
+      "number": 9,
+      "question_text": "You're training logistic regression on a dataset with 1,000 features and 500 examples. The model achieves 99% training accuracy but only 65% test accuracy. What is the most likely cause and solution?",
+      "correct_answer": "A",
+      "bloom_level": "Analyze",
+      "difficulty": "hard",
+      "concept_tested": "Logistic Regression",
+      "distractor_quality": 0.92,
+      "explanation_word_count": 81
+    },
+    {
+      "id": "ch04-q010",
+      "number": 10,
+      "question_text": "In the context of logistic regression and neural networks, what role does the sigmoid play as an activation function?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Sigmoid Activation",
+      "distractor_quality": 0.89,
+      "explanation_word_count": 77
+    }
+  ],
+  "answer_distribution": {
+    "A": 3,
+    "B": 2,
+    "C": 3,
+    "D": 2
+  },
+  "bloom_distribution": {
+    "Remember": 3,
+    "Understand": 5,
+    "Apply": 1,
+    "Analyze": 1,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "bloom_distribution_target": {
+    "Remember": 3,
+    "Understand": 4,
+    "Apply": 2,
+    "Analyze": 1,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "bloom_deviation": {
+    "Remember": 0,
+    "Understand": 1,
+    "Apply": -1,
+    "Analyze": 0,
+    "total_deviation": 2.0
+  },
+  "concept_coverage": {
+    "total_concepts": 10,
+    "tested_concepts": 9,
+    "coverage_percentage": 90,
+    "priority_1_concepts": 10,
+    "priority_1_tested": 9,
+    "priority_1_coverage": 90
+  },
+  "quality_scores": {
+    "content_readiness": 100,
+    "bloom_distribution": 23,
+    "answer_balance": 14,
+    "concept_coverage": 18,
+    "question_quality": 29,
+    "distractor_quality": 27,
+    "explanation_quality": 15,
+    "total": 92
+  },
+  "notes": [
+    "Excellent content readiness (100/100)",
+    "Strong Bloom's distribution (30% Remember, 50% Understand, 10% Apply, 10% Analyze)",
+    "Good answer balance: A=30%, B=20%, C=30%, D=20%",
+    "90% concept coverage (9 of 10 concepts tested)",
+    "All questions have clear, educational explanations",
+    "Average distractor quality: 88.9%",
+    "Includes one Analyze-level question for critical thinking"
+  ],
+  "recommendations": [
+    "Excellent quiz - minimal improvements needed",
+    "Consider adding one question on Maximum Likelihood for 100% coverage",
+    "Answer distribution is well-balanced and unpredictable"
+  ]
+}
