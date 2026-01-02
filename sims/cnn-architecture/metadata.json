@@ -1,0 +1,68 @@
+{
+  "title": "CNN Architecture Visualizer",
+  "creator": "Claude Code with microsim-generator skill",
+  "subject": "Machine Learning, Deep Learning, Convolutional Neural Networks",
+  "description": "Interactive visualization showing the layer structure and data flow through different CNN architectures including Simple CNN, VGG-like, and ResNet Block.",
+  "date": "2025-12-30",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "educationalLevel": "Undergraduate",
+  "learningObjectives": [
+    "Understand the sequential structure of CNN architectures",
+    "Visualize how data dimensions change through layers",
+    "Compare different architectural patterns",
+    "Learn the purpose of different layer types",
+    "Understand skip connections in ResNet"
+  ],
+  "bloomsTaxonomy": ["Understand", "Apply", "Analyze"],
+  "duration": "10-15 minutes",
+  "prerequisites": ["Basic neural networks", "Image representation", "Matrix operations"],
+  "framework": "p5.js",
+  "canvasDimensions": "900×750",
+  "responsive": "Width-responsive",
+  "controls": [
+    {
+      "name": "Architecture",
+      "type": "dropdown",
+      "description": "Select CNN architecture (Simple CNN, VGG-like, ResNet Block)"
+    },
+    {
+      "name": "Flow Speed",
+      "type": "slider",
+      "range": "0.1-2.0",
+      "default": "0.5",
+      "description": "Control animation speed of data flow"
+    },
+    {
+      "name": "Play/Pause",
+      "type": "button",
+      "description": "Start or pause the data flow animation"
+    },
+    {
+      "name": "Reset",
+      "type": "button",
+      "description": "Reset animation to beginning"
+    }
+  ],
+  "modelType": "Visual Architecture Diagram",
+  "variables": ["layers", "dataFlowProgress", "isAnimating"],
+  "architectures": [
+    "Simple CNN: Input → Conv → Pool → Conv → Pool → FC → Output",
+    "VGG-like: Input → 2×Conv → Pool → Conv → Pool → 2×FC → Output",
+    "ResNet Block: Input → Conv1×1 → Conv3×3 → Conv1×1 → Add → ReLU"
+  ],
+  "assumptions": [
+    "Simplified visualization of layer sizes",
+    "Standard convolution and pooling operations",
+    "ReLU activation functions implied",
+    "Typical dimension reduction patterns"
+  ],
+  "limitations": [
+    "Does not show actual computation or weights",
+    "Simplified representation of complex architectures",
+    "Fixed set of example architectures",
+    "Does not visualize activation maps or filters"
+  ]
+}

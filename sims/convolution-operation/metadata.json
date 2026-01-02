@@ -1,0 +1,69 @@
+{
+  "title": "Convolution Operation",
+  "creator": "Claude Code with microsim-generator skill",
+  "subject": "Machine Learning, Computer Vision, Convolutional Neural Networks",
+  "description": "Interactive visualization demonstrating how convolution filters slide over images to detect features like edges, with step-by-step computation display.",
+  "date": "2025-12-30",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "educationalLevel": "Undergraduate",
+  "learningObjectives": [
+    "Understand the sliding window mechanism of convolution",
+    "Visualize how filters detect specific features in images",
+    "Comprehend the element-wise multiplication and summation process",
+    "Observe how convolution reduces spatial dimensions"
+  ],
+  "bloomsTaxonomy": ["Understand", "Apply", "Analyze"],
+  "duration": "10-15 minutes",
+  "prerequisites": ["Basic matrix operations", "Image representation as grids"],
+  "framework": "p5.js",
+  "canvasDimensions": "900×770",
+  "responsive": "Width-responsive",
+  "controls": [
+    {
+      "name": "Filter Type",
+      "type": "dropdown",
+      "description": "Select convolution filter (Vertical Edge, Horizontal Edge, Blur, Sharpen, Identity)"
+    },
+    {
+      "name": "Animation Speed",
+      "type": "slider",
+      "range": "0.1-3.0",
+      "default": "1.0",
+      "description": "Control how fast the filter slides across the image"
+    },
+    {
+      "name": "Show Steps",
+      "type": "checkbox",
+      "default": "true",
+      "description": "Display computation details for current position"
+    },
+    {
+      "name": "Play/Pause",
+      "type": "button",
+      "description": "Start or pause the animation"
+    },
+    {
+      "name": "Reset",
+      "type": "button",
+      "description": "Reset animation to starting position"
+    }
+  ],
+  "modelType": "Discrete Simulation",
+  "variables": ["inputImage", "filter", "featureMap", "currentRow", "currentCol"],
+  "equations": ["output[i][j] = sum(input[i:i+3, j:j+3] * filter)"],
+  "assumptions": [
+    "3×3 filter size",
+    "Stride of 1",
+    "No padding (valid convolution)",
+    "Binary/simple input values for clarity"
+  ],
+  "limitations": [
+    "Fixed 5×5 input size for visualization clarity",
+    "Only 3×3 filters shown",
+    "Does not demonstrate padding or different strides",
+    "Simplified to 2D (single channel)"
+  ]
+}
