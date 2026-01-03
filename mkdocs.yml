@@ -147,6 +147,25 @@ nav:
       - 12. Evaluation & Optimization:
           - Content: chapters/12-evaluation-optimization/index.md
           - Quiz: chapters/12-evaluation-optimization/quiz.md
+  - MicroSims:
+      - Overview: sims/index.md
+      - Activation Functions: sims/activation-functions/index.md
+      - Categorical Encoding Explorer: sims/categorical-encoding-explorer/index.md
+      - CNN Architecture: sims/cnn-architecture/index.md
+      - Confusion Matrix Explorer: sims/confusion-matrix-explorer/index.md
+      - Convolution Operation: sims/convolution-operation/index.md
+      - Distance Metrics: sims/distance-metrics/index.md
+      - Entropy-Gini Comparison: sims/entropy-gini-comparison/index.md
+      - Feature Scaling Visualizer: sims/feature-scaling-visualizer/index.md
+      - K-Selection Simulator: sims/k-selection-simulator/index.md
+      - K-Fold Cross Validation: sims/kfold-cross-validation/index.md
+      - Lasso Regression Geometry: sims/lasso-regression-geometry/index.md
+      - Network Architecture Visualizer: sims/network-architecture-visualizer/index.md
+      - Ridge Regression Geometry: sims/ridge-regression-geometry/index.md
+      - ROC Curve Comparison: sims/roc-curve-comparison/index.md
+      - Sigmoid Explorer: sims/sigmoid-explorer/index.md
+      - SVM Margin Maximization: sims/svm-margin-maximization/index.md
+      - Training Validation Curves: sims/training-validation-curves/index.md
   - Learning Graph:
       - Introduction: learning-graph/index.md
       - Graph Viewer: sims/graph-viewer/index.md
@@ -160,6 +179,8 @@ nav:
       - Glossary Quality Report: learning-graph/glossary-quality-report.md
       - FAQ Quality Report: learning-graph/faq-quality-report.md
       - FAQ Coverage Gaps: learning-graph/faq-coverage-gaps.md
+      - Book Metrics: learning-graph/book-metrics.md
+      - Chapter Metrics: learning-graph/chapter-metrics.md
 
 # Extra Configuration
 extra:
