@@ -450,7 +450,9 @@ Most SVM software (including scikit-learn) solves the dual formulation using spe
 
 ## Interactive Visualization: Maximum Margin Classification
 
-<iframe src="../../sims/svm-margin-maximization/main.html" width="100%" height="582" frameborder="0"></iframe>
+<iframe src="../../sims/svm-margin-maximization/main.html" width="100%" height="582" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](../../sims/svm-margin-maximization/main.html){: target="_blank" .md-button } | [Documentation](../../sims/svm-margin-maximization/index.md)
 
 ## Interactive Visualization: Kernel Trick Demonstration
 

@@ -788,13 +788,17 @@ Pipelines ensure that:
 
 Explore how min-max scaling and z-score standardization transform data differently:
 
-<iframe src="../../sims/feature-scaling-visualizer/feature-scaling-visualizer.html" width="100%" height="750" frameborder="0"></iframe>
+<iframe src="../../sims/feature-scaling-visualizer/feature-scaling-visualizer.html" width="100%" height="750" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](../../sims/feature-scaling-visualizer/feature-scaling-visualizer.html){: target="_blank" .md-button } | [Documentation](../../sims/feature-scaling-visualizer/index.md)
 
 ## Interactive Visualization: One-Hot Encoding Explorer
 
 Compare how label encoding and one-hot encoding transform categorical variables:
 
-<iframe src="../../sims/categorical-encoding-explorer/categorical-encoding-explorer.html" width="100%" height="850" frameborder="0"></iframe>
+<iframe src="../../sims/categorical-encoding-explorer/categorical-encoding-explorer.html" width="100%" height="850" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](../../sims/categorical-encoding-explorer/categorical-encoding-explorer.html){: target="_blank" .md-button } | [Documentation](../../sims/categorical-encoding-explorer/index.md)
 
 ## Summary
 

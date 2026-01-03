@@ -141,7 +141,9 @@ The Ridge solution is the point where the smallest error contour (ellipse from t
 
 #### Ridge Regression Geometry
 
-<iframe src="../../sims/ridge-regression-geometry/main.html" width="100%" height="582" frameborder="0"></iframe>
+<iframe src="../../sims/ridge-regression-geometry/main.html" width="100%" height="582" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](../../sims/ridge-regression-geometry/main.html){: target="_blank" .md-button } | [Documentation](../../sims/ridge-regression-geometry/index.md)
 
 ### Visualizing Coefficient Paths
 
@@ -225,7 +227,9 @@ When the error contour touches the constraint region, it's more likely to touch 
 
 #### Lasso Regression Geometry
 
-<iframe src="../../sims/lasso-regression-geometry/main.html" width="100%" height="582" frameborder="0"></iframe>
+<iframe src="../../sims/lasso-regression-geometry/main.html" width="100%" height="582" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](../../sims/lasso-regression-geometry/main.html){: target="_blank" .md-button } | [Documentation](../../sims/lasso-regression-geometry/index.md)
 
 ### Lasso Coefficient Paths
 

@@ -669,13 +669,17 @@ for param in model.layer1.parameters():
 
 Build and explore different neural network architectures:
 
-<iframe src="../../sims/network-architecture-visualizer/network-architecture.html" width="100%" height="750" frameborder="0"></iframe>
+<iframe src="../../sims/network-architecture-visualizer/network-architecture.html" width="100%" height="750" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](../../sims/network-architecture-visualizer/network-architecture.html){: target="_blank" .md-button } | [Documentation](../../sims/network-architecture-visualizer/index.md)
 
 ## Interactive Visualization: Activation Functions
 
 Compare different activation functions and their properties:
 
-<iframe src="../../sims/activation-functions/activation-functions.html" width="100%" height="850" frameborder="0"></iframe>
+<iframe src="../../sims/activation-functions/activation-functions.html" width="100%" height="850" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](../../sims/activation-functions/activation-functions.html){: target="_blank" .md-button } | [Documentation](../../sims/activation-functions/index.md)
 
 ## Summary
 

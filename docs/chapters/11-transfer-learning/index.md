@@ -341,7 +341,9 @@ In our ants vs. bees example with only 120 training images per class, a model tr
 
 Visualize how training and validation errors evolve during model training:
 
-<iframe src="../../sims/training-validation-curves/training-validation.html" width="100%" height="750" frameborder="0"></iframe>
+<iframe src="../../sims/training-validation-curves/training-validation.html" width="100%" height="750" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](../../sims/training-validation-curves/training-validation.html){: target="_blank" .md-button } | [Documentation](../../sims/training-validation-curves/index.md)
 
 ## Case Study: Ants vs. Bees Classification
 

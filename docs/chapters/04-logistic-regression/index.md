@@ -437,7 +437,9 @@ for C in C_values:
 
 This interactive visualization shows how the sigmoid function $\sigma(z) = \frac{1}{1+e^{-z}}$ transforms a linear function $z = mx + b$ into probabilities. Adjust the slope to control prediction confidence (steeper = more confident) and the intercept to shift the decision boundary.
 
-<iframe src="../../sims/sigmoid-explorer/main.html" width="100%" height="680px" frameborder="0"></iframe>
+<iframe src="../../sims/sigmoid-explorer/main.html" width="100%" height="680px" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](../../sims/sigmoid-explorer/main.html){: target="_blank" .md-button } | [Documentation](../../sims/sigmoid-explorer/index.md)
 
 ## Interactive Visualization: Multiclass Decision Boundaries
 
