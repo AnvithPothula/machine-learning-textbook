@@ -3,8 +3,8 @@
 
 // Canvas dimensions
 let canvasWidth = 900;
-let drawHeight = 650;
-let controlHeight = 120;
+let drawHeight = 680;
+let controlHeight = 170;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 20;
 let sliderLeftMargin = 150;
