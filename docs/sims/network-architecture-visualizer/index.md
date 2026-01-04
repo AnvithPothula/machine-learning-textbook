@@ -1,5 +1,11 @@
 # Neural Network Architecture Visualizer
 
+<iframe src="main.html" width="100%" height="750px" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](main.html){: target="_blank" .md-button }
+
+## Description
+
 An interactive tool for building and visualizing different neural network architectures.
 
 ## Learning Objectives
@@ -51,5 +57,3 @@ An interactive tool for building and visualizing different neural network archit
 - [Neural Networks](../../chapters/09-neural-networks/index.md)
 - [Hidden Layers](../../chapters/09-neural-networks/index.md#network-architecture)
 - [Fully Connected Layers](../../chapters/09-neural-networks/index.md#network-architecture)
-
-<iframe src="network-architecture.html" width="100%" height="750" frameborder="0"></iframe>

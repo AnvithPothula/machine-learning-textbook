@@ -30,6 +30,6 @@ This interactive viewer allows you to explore the learning graph for the course.
 
 ## Launch the Viewer
 
-[Open Learning Graph Viewer](./main.html){ .md-button .md-button--primary }
+<iframe src="main.html" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
 
-<iframe src="./main.html" width="100%" height="600px" frameborder="0"></iframe>
+[View Fullscreen](main.html){: target="_blank" .md-button }

@@ -1,5 +1,11 @@
 # Interactive Confusion Matrix Explorer
 
+<iframe src="main.html" width="100%" height="950px" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](main.html){: target="_blank" .md-button }
+
+## Description
+
 Explore confusion matrices and calculate classification metrics interactively.
 
 ## Learning Objectives
@@ -23,5 +29,3 @@ Explore confusion matrices and calculate classification metrics interactively.
 - **F1 Score**: Harmonic mean of precision and recall
 - **Specificity**: True negative rate
 - **FPR**: False positive rate
-
-<iframe src="confusion-matrix.html" width="100%" height="900" frameborder="0"></iframe>

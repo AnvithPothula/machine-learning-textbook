@@ -1,5 +1,11 @@
 # K Selection Interactive Simulator
 
+<iframe src="main.html" width="100%" height="850px" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](main.html){: target="_blank" .md-button }
+
+## Description
+
 An interactive visualization demonstrating how the choice of k affects KNN decision boundaries and prediction behavior.
 
 ## Learning Objectives
@@ -49,5 +55,3 @@ An interactive visualization demonstrating how the choice of k affects KNN decis
 - [K Selection](../../chapters/02-k-nearest-neighbors/index.md#k-selection-choosing-the-right-number-of-neighbors)
 - [Decision Boundaries](../../chapters/02-k-nearest-neighbors/index.md#decision-boundaries-and-voronoi-diagrams)
 - [Voronoi Diagrams](../../chapters/02-k-nearest-neighbors/index.md#decision-boundaries-and-voronoi-diagrams)
-
-<iframe src="k-selection-simulator.html" width="100%" height="800" frameborder="0"></iframe>

@@ -264,9 +264,9 @@ The accuracy typically increases initially as k grows (reducing overfitting to n
 
 Explore how different k values affect decision boundaries and predictions:
 
-<iframe src="../../sims/k-selection-simulator/k-selection-simulator.html" width="100%" height="850" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+<iframe src="../../sims/k-selection-simulator/main.html" width="100%" height="850" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
 
-[View Fullscreen](../../sims/k-selection-simulator/k-selection-simulator.html){: target="_blank" .md-button } | [Documentation](../../sims/k-selection-simulator/index.md)
+[View Fullscreen](../../sims/k-selection-simulator/main.html){: target="_blank" .md-button } | [Documentation](../../sims/k-selection-simulator/index.md)
 
 ## Decision Boundaries and Voronoi Diagrams
 

@@ -1,5 +1,11 @@
 # Activation Function Comparison
 
+<iframe src="main.html" width="100%" height="850px" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](main.html){: target="_blank" .md-button }
+
+## Description
+
 An interactive visualization comparing sigmoid, tanh, ReLU, and Leaky ReLU activation functions.
 
 ## Learning Objectives
@@ -51,5 +57,3 @@ An interactive visualization comparing sigmoid, tanh, ReLU, and Leaky ReLU activ
 
 - [Activation Functions](../../chapters/09-neural-networks/index.md#activation-functions)
 - [Neural Networks](../../chapters/09-neural-networks/index.md)
-
-<iframe src="activation-functions.html" width="100%" height="850" frameborder="0"></iframe>

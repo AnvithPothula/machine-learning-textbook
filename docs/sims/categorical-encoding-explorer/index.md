@@ -1,5 +1,11 @@
 # Categorical Encoding Explorer
 
+<iframe src="main.html" width="100%" height="870px" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](main.html){: target="_blank" .md-button }
+
+## Description
+
 An interactive visualization comparing label encoding and one-hot encoding for categorical variables.
 
 ## Learning Objectives
@@ -42,5 +48,3 @@ An interactive visualization comparing label encoding and one-hot encoding for c
 - [Label Encoding](../../chapters/08-data-preprocessing/index.md#label-encoding)
 - [One-Hot Encoding](../../chapters/08-data-preprocessing/index.md#one-hot-encoding)
 - [Data Preprocessing](../../chapters/08-data-preprocessing/index.md)
-
-<iframe src="categorical-encoding-explorer.html" width="100%" height="850" frameborder="0"></iframe>

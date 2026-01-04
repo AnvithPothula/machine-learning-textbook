@@ -272,9 +272,9 @@ Understanding these components is crucial for computing derived metrics like pre
 
 Explore the relationship between confusion matrix values and classification metrics:
 
-<iframe src="../../sims/confusion-matrix-explorer/confusion-matrix.html" width="100%" height="950" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+<iframe src="../../sims/confusion-matrix-explorer/main.html" width="100%" height="950" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
 
-[View Fullscreen](../../sims/confusion-matrix-explorer/confusion-matrix.html){: target="_blank" .md-button } | [Documentation](../../sims/confusion-matrix-explorer/index.md)
+[View Fullscreen](../../sims/confusion-matrix-explorer/main.html){: target="_blank" .md-button } | [Documentation](../../sims/confusion-matrix-explorer/index.md)
 
 ## Classification Metrics: Beyond Accuracy
 
@@ -424,9 +424,9 @@ plt.show()
 
 Compare ROC curves for different classifier performance levels:
 
-<iframe src="../../sims/roc-curve-comparison/roc-curve.html" width="100%" height="950" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+<iframe src="../../sims/roc-curve-comparison/main.html" width="100%" height="950" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
 
-[View Fullscreen](../../sims/roc-curve-comparison/roc-curve.html){: target="_blank" .md-button } | [Documentation](../../sims/roc-curve-comparison/index.md)
+[View Fullscreen](../../sims/roc-curve-comparison/main.html){: target="_blank" .md-button } | [Documentation](../../sims/roc-curve-comparison/index.md)
 
 ## Advanced Optimization Algorithms
 

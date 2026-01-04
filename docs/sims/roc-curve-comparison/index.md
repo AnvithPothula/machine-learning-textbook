@@ -1,5 +1,11 @@
 # ROC Curve Comparison
 
+<iframe src="main.html" width="100%" height="950px" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](main.html){: target="_blank" .md-button }
+
+## Description
+
 Compare ROC curves for classifiers with different performance levels.
 
 ## Learning Objectives
@@ -33,5 +39,3 @@ Compare ROC curves for classifiers with different performance levels.
 - **Fair**: AUC 0.7-0.8
 - **Poor**: AUC 0.5-0.7
 - **Random**: AUC = 0.5 (diagonal line)
-
-<iframe src="roc-curve.html" width="100%" height="900" frameborder="0"></iframe>

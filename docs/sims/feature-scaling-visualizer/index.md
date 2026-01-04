@@ -1,5 +1,11 @@
 # Feature Scaling Visualizer
 
+<iframe src="main.html" width="100%" height="750px" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+[View Fullscreen](main.html){: target="_blank" .md-button }
+
+## Description
+
 An interactive visualization comparing min-max scaling and z-score standardization across different data distributions.
 
 ## Learning Objectives
@@ -42,5 +48,3 @@ An interactive visualization comparing min-max scaling and z-score standardizati
 - [Normalization](../../chapters/08-data-preprocessing/index.md#min-max-scaling-normalization)
 - [Standardization](../../chapters/08-data-preprocessing/index.md#z-score-normalization-standardization)
 - [Data Preprocessing](../../chapters/08-data-preprocessing/index.md)
-
-<iframe src="feature-scaling-visualizer.html" width="100%" height="700" frameborder="0"></iframe>
