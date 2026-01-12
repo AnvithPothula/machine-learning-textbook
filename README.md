@@ -9,6 +9,8 @@
 
 ## Overview
 
+Available at: [https://anvithpothula.github.io/machine-learning-textbook/](https://anvithpothula.github.io/machine-learning-textbook/)
+
 This is an interactive, AI-generated intelligent textbook on **Machine Learning: Algorithms and Applications** designed for **college undergraduate students**. Built using MkDocs with the Material theme, it incorporates learning graphs, concept dependencies, interactive MicroSims, and comprehensive glossary definitions following ISO 11179 standards.
 
 The textbook provides a rigorous yet accessible introduction to machine learning, covering the fundamental algorithms that power modern artificial intelligence systems. Starting with supervised learning methods like k-nearest neighbors, decision trees, logistic regression, and support vector machines, students progress through unsupervised learning with k-means clustering, and culminate with deep learning including fully connected neural networks, convolutional neural networks (CNNs), and transfer learning techniques.
