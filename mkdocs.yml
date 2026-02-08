@@ -29,15 +29,19 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  logo: img/logo.png
+  favicon: img/favicon.png
   font:
     text: Roboto
     code: Roboto Mono
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.tabs
     - navigation.sections
     - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.path
     - navigation.top
     - search.suggest
     - search.highlight
@@ -85,6 +89,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.magiclink
+  - pymdownx.snippets
 
 # Extra JavaScript
 extra_javascript:
@@ -100,6 +106,7 @@ plugins:
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - glightbox
   - minify:
       minify_html: true
 
@@ -181,6 +188,10 @@ nav:
       - FAQ Coverage Gaps: learning-graph/faq-coverage-gaps.md
       - Book Metrics: learning-graph/book-metrics.md
       - Chapter Metrics: learning-graph/chapter-metrics.md
+  - About: about.md
+  - License: license.md
+  - Contact: contact.md
+  - Feature Checklist: feature-checklist.md
 
 # Extra Configuration
 extra:

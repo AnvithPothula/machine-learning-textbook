@@ -1,4 +1,12 @@
+---
+title: Machine Learning - Algorithms and Applications
+description: A comprehensive intelligent textbook on machine learning algorithms and applications
+image: img/cover.png
+---
+
 # Machine Learning: Algorithms and Applications
+
+![Machine Learning: Algorithms and Applications](./img/cover.png){ width="100%" }
 
 Welcome to the comprehensive intelligent textbook on Machine Learning, covering fundamental algorithms and practical applications.
 
